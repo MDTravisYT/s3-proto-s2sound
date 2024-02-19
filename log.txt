@@ -101,6 +101,8 @@ C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X4A.ASM(77) : Warning
  moveq #Small_Bumper_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X4A.ASM(150) : Warning : Operand value 180 will be sign extended
  moveq #Small_Bumper_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X55.ASM(89) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X55.ASM(119) : Warning : Operand value 165 will be sign extended
  moveq #Level_Projectile_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X5A.ASM(225) : Warning : Operand value 205 will be sign extended
@@ -115,14 +117,46 @@ C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\AIZ_BSHP.ASM(140) : Warnin
  moveq #Missile_Explosion_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XAC.ASM(252) : Warning : Operand value 203 will be sign extended
  moveq #Missile_Explosion_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XAC.ASM(415) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XA9.ASM(714) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XAD.ASM(127) : Warning : Operand value 190 will be sign extended
  moveq #Rolling_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XAD.ASM(724) : Warning : Operand value 170 will be sign extended
  moveq #Water_Splash_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XAD.ASM(856) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XB5.ASM(879) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XB1.ASM(999) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X8E.ASM(526) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X8D.ASM(595) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X8F.ASM(913) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XB6.ASM(413) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XB4.ASM(538) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XB3.ASM(582) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XB2.ASM(505) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X85.ASM(334) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X86.ASM(613) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X8C.ASM(550) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\EXPLOSNS.ASM(44) : Warning : Operand value 165 will be sign extended
  moveq #Level_Projectile_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X9D.ASM(210) : Warning : Operand value 206 will be sign extended
  moveq #Ring_Left_Speaker_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XC4.ASM(391) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XA5.ASM(208) : Warning : Operand value 204 will be sign extended
  moveq #Spring_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XA0.ASM(117) : Warning : Operand value 204 will be sign extended
@@ -135,6 +169,8 @@ C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XBC.ASM(84) : Warning
  moveq #Slide_Thunk_Sfx,D0
 C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XBC.ASM(115) : Warning : Operand value 203 will be sign extended
  moveq #Smash_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XBF.ASM(46) : Warning : Operand value 172 will be sign extended
+ moveq #Boss_Hit_Sfx,D0
 
 Assembly completed.
-0 error(s) from 113996 lines in 0.41 seconds
+0 error(s) from 113996 lines in 0.37 seconds

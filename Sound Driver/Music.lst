@@ -1,4 +1,4 @@
- AS V1.42 Beta [Bld 251] - Source File Music.asm - Page 1 - 2/19/2024 13:50:59
+ AS V1.42 Beta [Bld 251] - Source File Music.asm - Page 1 - 2/19/2024 13:58:26
 
 
     1/       0 :                        z80_ptr function x,(x)<<8&$FF00|(x)>>8&$7F|$80
@@ -45775,7 +45775,7 @@ Note fill will not work as intended unless you divide the fill value by the temp
   709/   F8000 :                        ;-------------------------------------------------------------------------------                   
   710/   F8000 :                        SEGA_PCM_Data:                                                 ; Offset_0x0F8000
   711/   F8000 :                                        binclude  "sounds\sega.pcm"
- AS V1.42 Beta [Bld 251] - Source File Music.asm - Page 2 - 2/19/2024 13:51:0
+ AS V1.42 Beta [Bld 251] - Source File Music.asm - Page 2 - 2/19/2024 13:58:26
 
 
   Symbol Table (* = unused):
@@ -46644,7 +46644,7 @@ Note fill will not work as intended unless you divide the fill value by the temp
  SUPERSONIC_LOOP08 :          C2117 C |  SUPERSONIC_LOOP09 :          C2099 C |
  SUPERSONIC_LOOP0A :          C20A1 C |  SUPERSONIC_PSG1 :            C226D C |
  SUPERSONIC_PSG2 :            C22AD C |  SUPERSONIC_PSG3 :            C22AE C |
- SUPERSONIC_VOICES :          C22DA C | *TIME :                  "13:50:58" - |
+ SUPERSONIC_VOICES :          C22DA C | *TIME :                  "13:58:25" - |
  TITLE_SCREEN_DAC :           C83E2 C |  TITLE_SCREEN_FM1 :           C82E3 C |
  TITLE_SCREEN_FM2 :           C8318 C |  TITLE_SCREEN_FM3 :           C834A C |
  TITLE_SCREEN_FM4 :           C8383 C |  TITLE_SCREEN_FM5 :           C82E1 C |
@@ -46700,7 +46700,7 @@ Note fill will not work as intended unless you divide the fill value by the temp
    1766 symbols
     172 unused symbols
 
- AS V1.42 Beta [Bld 251] - Source File Music.asm - Page 3 - 2/19/2024 13:51:0
+ AS V1.42 Beta [Bld 251] - Source File Music.asm - Page 3 - 2/19/2024 13:58:26
 
 
   Defined Macros:
@@ -46758,7 +46758,7 @@ _MOVE                                 | _TST
 
      98 macros
 
- AS V1.42 Beta [Bld 251] - Source File Music.asm - Page 4 - 2/19/2024 13:51:0
+ AS V1.42 Beta [Bld 251] - Source File Music.asm - Page 4 - 2/19/2024 13:58:26
 
 
   Defined Functions:
@@ -46772,7 +46772,7 @@ SIGNEXTEND                            | SIGNMASK
 BIT                                   | CHKOP                                
 NOTZ80                                | Z80_PTR                              
 
- AS V1.42 Beta [Bld 251] - Source File Music.asm - Page 5 - 2/19/2024 13:51:0
+ AS V1.42 Beta [Bld 251] - Source File Music.asm - Page 5 - 2/19/2024 13:58:26
 
 
   Code Pages:
@@ -46782,7 +46782,7 @@ STANDARD (0 changed characters)
 
 1 code page
 
-1.44 second assembly time
+1.03 second assembly time
 
   16507 lines source file
   72865 lines incl. macro expansions

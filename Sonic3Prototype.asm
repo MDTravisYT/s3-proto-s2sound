@@ -4345,7 +4345,7 @@ PlayList:                                                      ; Offset_0x00396E
                 dc.b    $05                                ; $06
                 dc.b    $04                               ; $07
                 dc.b    $04                               ; $08
-                dc.b    $15                               ; $09
+                dc.b    $05                               ; $09
                 dc.b    $05                               ; $0A
                 dc.b    $05                                       ; $0B
                 dc.b    $05                                       ; $0C
