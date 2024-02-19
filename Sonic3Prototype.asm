@@ -3900,7 +3900,7 @@ Offset_0x003300:
                 nop
                 nop
                 nop
-                moveq   #Title_Screen_Snd, D0                              ; $25
+                moveq   #$19, D0                              ; $25
                 bsr     Play_Music                             ; Offset_0x001176
                 move.w  (VDP_Register_1_Command).w, D0               ; $FFFFF60E
                 ori.b   #$40, D0
@@ -4041,7 +4041,7 @@ Secret_Codes_Test:                                             ; Offset_0x003554
                 bne.s   Offset_0x003590
                 move.w  #$0101, (Level_Select_Flag).w                ; $FFFFFFD0
                 move.w  #$0101, (Debug_Mode_Flag).w                  ; $FFFFFFD2
-                moveq   #Ring_Sfx, D0                                      ; $32
+                moveq   #$00B5, D0                                      ; $32
                 bsr     Play_Music                             ; Offset_0x001176
 Code_NoMatch:                                                  ; Offset_0x00358A
                 move.w  #$0000, (Secret_Code_Input_Entries).w        ; $FFFFFFD4
@@ -4337,54 +4337,54 @@ Title_Screen_Sonic_Data:                                       ; Offset_0x00376A
 ; ->>>
 ;===============================================================================
 PlayList:                                                      ; Offset_0x00396E
-                dc.b    Angel_Island_1_Snd                                 ; $01
-                dc.b    Angel_Island_2_Snd                                 ; $02
-                dc.b    Hydrocity_1_Snd                                    ; $03
-                dc.b    Hydrocity_2_Snd                                    ; $04
-                dc.b    Marble_Garden_1_Snd                                ; $05
-                dc.b    Marble_Garden_2_Snd                                ; $06
-                dc.b    Carnival_Night_1_Snd                               ; $07
-                dc.b    Carnival_Night_2_Snd                               ; $08
-                dc.b    Flying_Battery_1_Snd                               ; $09
-                dc.b    Flying_Battery_2_Snd                               ; $0A
-                dc.b    Icecap_1_Snd                                       ; $0B
-                dc.b    Icecap_2_Snd                                       ; $0C
-                dc.b    Launch_Base_1_Snd                                  ; $0D
-                dc.b    Launch_Base_2_Snd                                  ; $0E
-                dc.b    Mushroom_Valley_1_Snd                              ; $0F
-                dc.b    Mushroom_Valley_2_Snd                              ; $10
-                dc.b    Sandopolis_1_Snd                                   ; $11
-                dc.b    Sandopolis_2_Snd                                   ; $12
-                dc.b    Lava_Reef_1_Snd                                    ; $13
-                dc.b    Lava_Reef_2_Snd                                    ; $14
-                dc.b    Sky_Sanctuary_Snd                                  ; $15
-                dc.b    Death_Egg_1_Snd                                    ; $16
-                dc.b    Death_Egg_2_Snd                                    ; $17
-                dc.b    Death_Egg_2_Snd                                    ; $17
-                dc.b    The_Doomsday_Snd                                   ; $1A
-                dc.b    The_Doomsday_Snd                                   ; $1A
-                dc.b    Special_Stage_Snd                                  ; $1C
-                dc.b    Special_Stage_Snd                                  ; $1C
-                dc.b    Azure_Lake_Snd                                     ; $20
-                dc.b    Azure_Lake_Snd                                     ; $20
-                dc.b    Balloon_Park_Snd                                   ; $21
-                dc.b    Balloon_Park_Snd                                   ; $21
-                dc.b    Desert_Palace_Snd                                  ; $22
-                dc.b    Desert_Palace_Snd                                  ; $22
-                dc.b    Chrome_Gadget_Snd                                  ; $23
-                dc.b    Chrome_Gadget_Snd                                  ; $23
-                dc.b    Endless_Mine_Snd                                   ; $24
-                dc.b    Endless_Mine_Snd                                   ; $24
-                dc.b    Special_Stage_Snd                                  ; $1C
-                dc.b    Special_Stage_Snd                                  ; $1C
-                dc.b    BS_Slot_Machine_Snd                                ; $1D
-                dc.b    BS_Slot_Machine_Snd                                ; $1D
-                dc.b    BS_Gumball_Machine_Snd                             ; $1E
-                dc.b    BS_Gumball_Machine_Snd                             ; $1E
-                dc.b    Special_Stage_Snd                                  ; $1C
-                dc.b    Special_Stage_Snd                                  ; $1C
-                dc.b    Special_Stage_Snd                                  ; $1C
-                dc.b    Special_Stage_Snd                                  ; $1C 
+                dc.b    $02                                 ; $01
+                dc.b    $02                                 ; $02
+                dc.b    $02                                    ; $03
+                dc.b    $02                                    ; $04
+                dc.b    $05                                ; $05
+                dc.b    $05                                ; $06
+                dc.b    $04                               ; $07
+                dc.b    $04                               ; $08
+                dc.b    $15                               ; $09
+                dc.b    $05                               ; $0A
+                dc.b    $05                                       ; $0B
+                dc.b    $05                                       ; $0C
+                dc.b    $0F                                  ; $0D
+                dc.b    $0F                                  ; $0E 
+                dc.b    $06                              ; $0F
+                dc.b    $06                              ; $10
+                dc.b    $10                                   ; $11
+                dc.b    $10                                   ; $12
+                dc.b    $0D                                    ; $13
+                dc.b    $0D                                    ; $14
+                dc.b    $04                                  ; $15
+                dc.b    $04                                    ; $16
+                dc.b    $0B                                    ; $17
+                dc.b    $0B                                    ; $17
+                dc.b    $09                                   ; $1A
+                dc.b    $09                                   ; $1A
+                dc.b    $0E                                  ; $1C
+                dc.b    $0E                                  ; $1C
+                dc.b    $0A                                     ; $20
+                dc.b    $0A                                     ; $20
+                dc.b    $07                                   ; $21
+                dc.b    $07                                   ; $21
+                dc.b    $0D                                  ; $22
+                dc.b    $0D                                  ; $22
+                dc.b    $0C                                  ; $23
+                dc.b    $0C                                  ; $23
+                dc.b    $02                                   ; $24
+                dc.b    $02                                   ; $24
+                dc.b    $05                                  ; $1C
+                dc.b    $05                                  ; $1C
+                dc.b    $04                                ; $1D
+                dc.b    $04                                ; $1D
+                dc.b    $05                             ; $1E
+                dc.b    $05                             ; $1E
+                dc.b    $05                                  ; $1C
+                dc.b    $05                                  ; $1C
+                dc.b    $0F                                  ; $1C
+                dc.b    $0F                                  ; $1C 
 ;-------------------------------------------------------------------------------                
 Level:                                                         ; Offset_0x00399E
                 bset    #$07, (Game_Mode).w                          ; $FFFFF600
@@ -6801,7 +6801,7 @@ Offset_0x005C50:
                 move.b  D0, (Continue_Count).w                       ; $FFFFFE18
                 move.l  #$00001388, (Next_Extra_Life_Score).w        ; $FFFFFFC0
                 move.l  #$00001388, (Next_Extra_Life_Score_P2).w     ; $FFFFFFC4
-                move.b  #Special_Stage_Entry_Sfx, D0                       ; $D0
+                move.b  #$00CA, D0                       ; $D0
                 jsr     (Play_Music)                           ; Offset_0x001176
                 moveq   #$00, D0
                 move.w  D0, (Two_Player_Flag_2).w                    ; $FFFFFF8A
@@ -7056,7 +7056,7 @@ Menu_Check_Secret_Codes:                                       ; Offset_0x005FD8
                 tst.b   $0001(A0)
                 bne.s   Offset_0x006002
                 move.w  #$0101, (A1)
-                moveq   #Ring_Sfx, D0                                      ; $32
+                moveq   #$00B5, D0                                      ; $32
                 jsr     (Play_Music)                           ; Offset_0x001176
 Offset_0x005FFC:
                 move.w  #$0000, (Secret_Code_Input_Entries).w        ; $FFFFFFD4
@@ -10750,15 +10750,15 @@ Resume_Music:                                                  ; Offset_0x00F89E
                 move.w  (Level_Music_Buffer).w, D0                   ; $FFFFFF90
                 btst    #$01, Obj_Player_Status(A1)                      ; $002F
                 beq.s   Offset_0x00F8BC
-                move.w  #Mushroom_Valley_2_Snd, D0                       ; $0010
+                move.w  #$0E, D0                       ; $0010
 Offset_0x00F8BC:
                 tst.b   (Super_Sonic_Flag).w                         ; $FFFFFE19
                 beq     Offset_0x00F8C8
-                move.w  #Mushroom_Valley_2_Snd, D0                       ; $0010
+               move.w  #$16, D0                       ; $0010
 Offset_0x00F8C8:
                 tst.b   (Boss_Flag).w                                ; $FFFFF7AA
                 beq.s   Offset_0x00F8D2
-                move.w  #Icecap_2_Snd, D0                                ; $000C
+                move.w  #$13, D0                                ; $000C
 Offset_0x00F8D2:
                 jsr     (Play_Music)                           ; Offset_0x001176
 Offset_0x00F8D8:
@@ -11254,7 +11254,7 @@ Add_Rings:                                                     ; Offset_0x010A26
                 bcc.s   Offset_0x010A32
                 addq.w  #$01, (Total_Ring_Count_Address).w           ; $FFFFFEF0
 Offset_0x010A32:
-                move.w  #Ring_Sfx, D0                                    ; $0032
+                move.w  #$00B5, D0                                    ; $0032
                 cmpi.w  #$03E7, (Ring_Count_Address).w               ; $FFFFFE20
                 bcc.s   Offset_0x010A74
                 addq.w  #$01, (Ring_Count_Address).w                 ; $FFFFFE20
@@ -11287,7 +11287,7 @@ Offset_0x010A94:
                 tst.w   (Two_Player_Flag).w                          ; $FFFFFFD8
                 beq.s   Offset_0x010A32
                 ori.b   #$01, (HUD_Rings_Refresh_Flag_P2).w          ; $FFFFFEC9
-                move.w  #Ring_Sfx, D0                                    ; $0032
+                move.w  #$00B5, D0                                    ; $0032
                 cmpi.w  #$0064, (Ring_Count_Address_P2).w            ; $FFFFFED0
                 bcs.s   Offset_0x010AD0
                 bset    #$01, (Ring_Status_Flag_P2).w                ; $FFFFFEC7
@@ -26660,20 +26660,20 @@ Level_Load_Music:                                              ; Offset_0x0432CA
                 jmp     (Play_Music)                           ; Offset_0x001176
 ;------------------------------------------------------------------------------- 
 Level_PlayList:                                                ; Offset_0x0432E0
-                dc.b    Angel_Island_1_Snd                                 ; $01
-                dc.b    Angel_Island_2_Snd                                 ; $02
-                dc.b    Hydrocity_1_Snd                                    ; $03
-                dc.b    Hydrocity_2_Snd                                    ; $04
-                dc.b    Marble_Garden_1_Snd                                ; $05
-                dc.b    Marble_Garden_2_Snd                                ; $06
-                dc.b    Carnival_Night_1_Snd                               ; $07
-                dc.b    Carnival_Night_2_Snd                               ; $08
-                dc.b    Flying_Battery_1_Snd                               ; $09
-                dc.b    Flying_Battery_2_Snd                               ; $0A
-                dc.b    Icecap_1_Snd                                       ; $0B
-                dc.b    Icecap_2_Snd                                       ; $0C
-                dc.b    Launch_Base_1_Snd                                  ; $0D
-                dc.b    Launch_Base_2_Snd                                  ; $0E 
+                dc.b    $02                                 ; $01
+                dc.b    $02                                 ; $02
+                dc.b    $02                                    ; $03
+                dc.b    $02                                    ; $04
+                dc.b    $05                                ; $05
+                dc.b    $05                                ; $06
+                dc.b    $04                               ; $07
+                dc.b    $04                               ; $08
+                dc.b    $15                               ; $09
+                dc.b    $05                               ; $0A
+                dc.b    $05                                       ; $0B
+                dc.b    $05                                       ; $0C
+                dc.b    $0F                                  ; $0D
+                dc.b    $0F                                  ; $0E 
 ;===============================================================================
 Restore_Player_Control:                                        ; Offset_0x0432EE
                 lea     (Obj_Player_One).w, A1                       ; $FFFFB000

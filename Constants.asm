@@ -230,10 +230,10 @@ Lava_Reef_2_Snd          equ $0014
 Sky_Sanctuary_Snd        equ $0015
 Death_Egg_1_Snd          equ $0016
 Death_Egg_2_Snd          equ $0017
-Mini_Boss_Snd            equ $0018
-Boss_Snd                 equ $0019
-The_Doomsday_Snd         equ $001A
-Special_Stage_Snd        equ $001C
+Mini_Boss_Snd            equ $0013
+Boss_Snd                 equ $0013
+The_Doomsday_Snd         equ $001C
+Special_Stage_Snd        equ $0012
 BS_Slot_Machine_Snd      equ $001D
 BS_Gumball_Machine_Snd   equ $001E
 Knuckles_Theme_Snd       equ $001F
@@ -242,55 +242,55 @@ Balloon_Park_Snd         equ $0021
 Desert_Palace_Snd        equ $0022
 Chrome_Gadget_Snd        equ $0023
 Endless_Mine_Snd         equ $0024
-Title_Screen_Snd         equ $0025
-Game_Over_Time_Over_Snd  equ $0027 
-Continue_Snd             equ $0028
-Extra_Life_Snd           equ $002A
-Got_Emerald_Snd          equ $002B
-Invincibility_Snd        equ $002C
-Panic_Snd                equ $0031 
+Title_Screen_Snd         equ $0019
+Game_Over_Time_Over_Snd  equ $001B 
+Continue_Snd             equ $001C
+Extra_Life_Snd           equ $0018
+Got_Emerald_Snd          equ $001D
+Invincibility_Snd        equ $0017
+Panic_Snd                equ $001F 
 
 Super_Sonic_Snd          equ $000A 
 
 
 ; Efeitos especiais     
-Ring_Sfx                 equ $0032
-Ring_Left_Speaker_Sfx    equ $0033
-Ring_Lost_Sfx            equ $0034
-Hurt_Sfx                 equ $0035
-Skidding_Sfx             equ $0036 ; Stopping_Sfx
-Collect_Oxygen_Sfx       equ $0038 
-Water_Splash_Sfx         equ $0039
-Drowning_Sfx             equ $003B
-Rolling_Sfx              equ $003C ; Spin_Sfx     
-Object_Hit_Sfx           equ $003D
-Got_Fire_Shield_Sfx      equ $003E  
-Got_Water_Shield_Sfx     equ $003F
-Got_Lightning_Shield_Sfx equ $0041
+Ring_Sfx                 equ $00B5
+Ring_Left_Speaker_Sfx    equ $00CE
+Ring_Lost_Sfx            equ $00C6
+Hurt_Sfx                 equ $00A3
+Skidding_Sfx             equ $00A4 ; Stopping_Sfx
+Collect_Oxygen_Sfx       equ $00AD 
+Water_Splash_Sfx         equ $00AA
+Drowning_Sfx             equ $00C2
+Rolling_Sfx              equ $00BE ; Spin_Sfx     
+Object_Hit_Sfx           equ $00C1
+Got_Fire_Shield_Sfx      equ $00AF  
+Got_Water_Shield_Sfx     equ $00AF
+Got_Lightning_Shield_Sfx equ $00AF
 Fire_Shield_Sfx          equ $0043
-Hyper_Form_Change_Sfx    equ $0046
+Hyper_Form_Change_Sfx    equ $00BC
 Grab_Sfx                 equ $004A
 Waterfall_Splash_Sfx     equ $004F
 Projectile_Sfx           equ $0051
-Missile_Explosion_Sfx    equ $0052
+Missile_Explosion_Sfx    equ $00CB
 Flame_Sfx                equ $0053
 Flying_Battery_Move_Sfx  equ $0054
 Missile_Throw_Sfx        equ $0056 
 Robotnik_Buzzer_Sfx      equ $0057
-Spike_Move_Sfx           equ $0058
-Draw_Bridge_Move_Sfx     equ $005C
+Spike_Move_Sfx           equ $00B8
+Draw_Bridge_Move_Sfx     equ $00BB
 Geyser_Sfx               equ $005D
 Fan_Big_Sfx              equ $005E 
 Sfx_61                   equ $0061
-Smash_Sfx                equ $0062 
-Switch_Blip_Sfx          equ $0064
+Smash_Sfx                equ $00CB
+Switch_Blip_Sfx          equ $00CD
 Floor_Thump_Sfx          equ $0068
 Crash_Sfx                equ $006C
 Jump_Sfx                 equ $0070
-Level_Projectile_Sfx     equ $0075
+Level_Projectile_Sfx     equ $00A5
 Underwater_Sfx           equ $0079
 Boss_Hit_Sfx             equ $007C
-Hoverpad_Sfx             equ -$80   ; $0080
+Hoverpad_Sfx             equ $00D2   ; $0080
 Transporter_Sfx          equ -$7F   ; $0081
 Tunnel_Booster_Sfx       equ -$7E   ; $0082
 Rising_Platform_Sfx      equ -$7D   ; $0083
@@ -298,24 +298,24 @@ Wave_Hover_Sfx           equ -$7C   ; $0084
 Trapdoor_Sfx             equ -$7B   ; $0085
 Balloon_Pop_Sfx          equ -$7A   ; $0086 
 Cannon_Turn_Sfx          equ -$79   ; $0087
-Small_Bumper_Sfx         equ -$75   ; $008B
+Small_Bumper_Sfx         equ $00B4   ; $008B
 Frost_Puff_Sfx           equ -$6F   ; $0091
 Ice_Spike_Sfx            equ -$6E   ; $0092
 Tube_Launcher_Sfx        equ -$6B   ; $0095
 Bridge_Collapse_Sfx      equ -$69   ; $0097  
 Buzzer_Sfx               equ -$65   ; $009B
 Door_Close_Sfx           equ -$56   ; $00AA
-Slide_Thunk_Sfx          equ -$50   ; $00B0
+Slide_Thunk_Sfx          equ $00BB   ; $00B0
 Super_Form_Change_Sfx    equ -$45   ; $00BB  
-Energy_Zap_Sfx           equ -$37   ; $00C9
-Check_Point_Sfx          equ -$32   ; $00CE 
-Special_Stage_Entry_Sfx  equ -$30   ; $00D0 
-Spring_Sfx               equ -$2E   ; $00D2
+Energy_Zap_Sfx           equ $00A6   ; $00C9
+Check_Point_Sfx          equ $00A1   ; $00CE 
+Special_Stage_Entry_Sfx  equ $00CA   ; $00D0 
+Spring_Sfx               equ $00CC   ; $00D2
 Error_Sfx                equ $00D3       
 
 S2_Enter_Big_Ring_Sfx    equ $0032
-S2_Extra_Life_Snd        equ $0098
-S2_Panic_Snd             equ $009F 
+S2_Extra_Life_Snd        equ $0018
+S2_Panic_Snd             equ $001F 
 S2_Smash_Sfx             equ $00B9 
 S2_Cha_Ching_Sfx         equ $00C5 
 S2_Spring_Sfx            equ $00CC

@@ -1143,7 +1143,7 @@ Offset_0x00DF82:
                 bgt.s   Offset_0x00DFC4
                 move.b  #$0D, Obj_Ani_Number(A0)                         ; $0020
                 bset    #$00, Obj_Status(A0)                             ; $002A
-                move.w  #$0036, D0
+                move.w  #$00A4, D0
                 jsr     (Play_Music)                           ; Offset_0x001176
                 cmpi.b  #$0C, Obj_Subtype(A0)                            ; $002C
                 bcs.s   Offset_0x00DFC4
@@ -1377,7 +1377,7 @@ Offset_0x00E204:
                 move.b  #$07, Obj_Width_2(A0)                            ; $001F
                 move.b  #$02, Obj_Ani_Number(A0)                         ; $0020
                 addq.w  #$01, Obj_Y(A0)                                  ; $0014
-                move.w  #$003C, D0
+                move.w  #$00BE, D0
                 jsr     (Play_Music)                           ; Offset_0x001176
                 tst.w   Obj_Inertia(A0)                                  ; $001C
                 bne.s   Offset_0x00E236
@@ -1417,7 +1417,7 @@ Offset_0x00E272:
                 addq.l  #$04, A7
                 move.b  #$01, Obj_Player_Jump(A0)                        ; $0040
                 clr.b   Obj_Player_St_Convex(A0)                         ; $003C
-                move.w  #$0070, D0
+                move.w  #$00A0, D0
                 jsr     (Play_Music)                           ; Offset_0x001176
                 move.b  Obj_Height_3(A0), Obj_Height_2(A0)        ; $001E, $0044
                 move.b  Obj_Width_3(A0), Obj_Width_2(A0)          ; $001F, $0045

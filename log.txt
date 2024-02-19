@@ -1,6 +1,140 @@
 
 SN 68k version 2.53
 
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\SONIC3PROTOTYPE.ASM(4044) : Warning : Operand value 181 will be sign extended
+ moveq #$00B5,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\SONIC3PROTOTYPE.ASM(7059) : Warning : Operand value 181 will be sign extended
+ moveq #$00B5,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\SONIC3PROTOTYPE.ASM(10647) : Warning : Operand value 163 will be sign extended
+ moveq #Hurt_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\SONIC3PROTOTYPE.ASM(10668) : Warning : Operand value 163 will be sign extended
+ moveq #Hurt_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\SONIC.ASM(1358) : Warning : Operand value 190 will be sign extended
+ moveq #Rolling_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X01.ASM(281) : Warning : Operand value 181 will be sign extended
+ moveq #Ring_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X01.ASM(312) : Warning : Operand value 175 will be sign extended
+ moveq #Got_Fire_Shield_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X01.ASM(328) : Warning : Operand value 175 will be sign extended
+ moveq #Got_Lightning_Shield_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X01.ASM(344) : Warning : Operand value 175 will be sign extended
+ moveq #Got_Water_Shield_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X01.ASM(394) : Warning : Operand value 188 will be sign extended
+ moveq #Hyper_Form_Change_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_HIT.ASM(39) : Warning : Operand value 193 will be sign extended
+ moveq #Object_Hit_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X26.ASM(121) : Warning : Operand value 190 will be sign extended
+ moveq #Rolling_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X36.ASM(360) : Warning : Operand value 203 will be sign extended
+ moveq #Smash_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X05.ASM(382) : Warning : Operand value 203 will be sign extended
+ moveq #Smash_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X0F.ASM(359) : Warning : Operand value 203 will be sign extended
+ moveq #Smash_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X0D.ASM(197) : Warning : Operand value 203 will be sign extended
+ moveq #Smash_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X07.ASM(216) : Warning : Operand value 204 will be sign extended
+ moveq #Spring_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X07.ASM(370) : Warning : Operand value 204 will be sign extended
+ moveq #Spring_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X07.ASM(529) : Warning : Operand value 204 will be sign extended
+ moveq #Spring_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X07.ASM(617) : Warning : Operand value 204 will be sign extended
+ moveq #Spring_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X07.ASM(691) : Warning : Operand value 204 will be sign extended
+ moveq #Spring_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X3D.ASM(90) : Warning : Operand value 184 will be sign extended
+ moveq #Spike_Move_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X5F.ASM(158) : Warning : Operand value 184 will be sign extended
+ moveq #Spike_Move_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X08.ASM(314) : Warning : Operand value 184 will be sign extended
+ moveq #Spike_Move_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X08.ASM(369) : Warning : Operand value 184 will be sign extended
+ moveq #Spike_Move_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X59.ASM(121) : Warning : Operand value 180 will be sign extended
+ moveq #Small_Bumper_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X15.ASM(111) : Warning : Operand value 204 will be sign extended
+ moveq #Spring_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X18.ASM(156) : Warning : Operand value 210 will be sign extended
+ moveq #Hoverpad_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X18.ASM(164) : Warning : Operand value 210 will be sign extended
+ moveq #Hoverpad_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X18.ASM(199) : Warning : Operand value 210 will be sign extended
+ moveq #Hoverpad_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X18.ASM(207) : Warning : Operand value 210 will be sign extended
+ moveq #Hoverpad_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X18.ASM(241) : Warning : Operand value 210 will be sign extended
+ moveq #Hoverpad_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X18.ASM(249) : Warning : Operand value 210 will be sign extended
+ moveq #Hoverpad_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X18.ASM(261) : Warning : Operand value 163 will be sign extended
+ moveq #Hurt_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X1B.ASM(196) : Warning : Operand value 203 will be sign extended
+ moveq #Smash_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X1F.ASM(136) : Warning : Operand value 205 will be sign extended
+ moveq #Switch_Blip_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X20.ASM(46) : Warning : Operand value 187 will be sign extended
+ moveq #Slide_Thunk_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X21.ASM(38) : Warning : Operand value 166 will be sign extended
+ moveq #Energy_Zap_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X24.ASM(70) : Warning : Operand value 190 will be sign extended
+ moveq #Rolling_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X10.ASM(128) : Warning : Operand value 190 will be sign extended
+ moveq #Rolling_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X32.ASM(86) : Warning : Operand value 187 will be sign extended
+ moveq #Draw_Bridge_Move_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X32.ASM(107) : Warning : Operand value 187 will be sign extended
+ moveq #Draw_Bridge_Move_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X33.ASM(59) : Warning : Operand value 205 will be sign extended
+ moveq #Switch_Blip_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X33.ASM(94) : Warning : Operand value 205 will be sign extended
+ moveq #Switch_Blip_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X33.ASM(132) : Warning : Operand value 205 will be sign extended
+ moveq #Switch_Blip_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X34.ASM(68) : Warning : Operand value 161 will be sign extended
+ moveq #Check_Point_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X46.ASM(60) : Warning : Operand value 210 will be sign extended
+ moveq #Hoverpad_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X46.ASM(77) : Warning : Operand value 210 will be sign extended
+ moveq #Hoverpad_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X4A.ASM(77) : Warning : Operand value 180 will be sign extended
+ moveq #Small_Bumper_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X4A.ASM(150) : Warning : Operand value 180 will be sign extended
+ moveq #Small_Bumper_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X55.ASM(119) : Warning : Operand value 165 will be sign extended
+ moveq #Level_Projectile_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X5A.ASM(225) : Warning : Operand value 205 will be sign extended
+ moveq #Switch_Blip_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X61.ASM(56) : Warning : Operand value 180 will be sign extended
+ moveq #Small_Bumper_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X63.ASM(34) : Warning : Operand value 205 will be sign extended
+ moveq #Switch_Blip_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X64.ASM(334) : Warning : Operand value 180 will be sign extended
+ moveq #Small_Bumper_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\AIZ_BSHP.ASM(140) : Warning : Operand value 203 will be sign extended
+ moveq #Missile_Explosion_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XAC.ASM(252) : Warning : Operand value 203 will be sign extended
+ moveq #Missile_Explosion_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XAD.ASM(127) : Warning : Operand value 190 will be sign extended
+ moveq #Rolling_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XAD.ASM(724) : Warning : Operand value 170 will be sign extended
+ moveq #Water_Splash_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\EXPLOSNS.ASM(44) : Warning : Operand value 165 will be sign extended
+ moveq #Level_Projectile_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0X9D.ASM(210) : Warning : Operand value 206 will be sign extended
+ moveq #Ring_Left_Speaker_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XA5.ASM(208) : Warning : Operand value 204 will be sign extended
+ moveq #Spring_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XA0.ASM(117) : Warning : Operand value 204 will be sign extended
+ moveq #Spring_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XBA.ASM(69) : Warning : Operand value 203 will be sign extended
+ moveq #Smash_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XB8.ASM(99) : Warning : Operand value 187 will be sign extended
+ moveq #Slide_Thunk_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XBC.ASM(84) : Warning : Operand value 187 will be sign extended
+ moveq #Slide_Thunk_Sfx,D0
+C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XBC.ASM(115) : Warning : Operand value 203 will be sign extended
+ moveq #Smash_Sfx,D0
 
 Assembly completed.
-0 error(s) from 113996 lines in 0.41 seconds
+0 error(s) from 113996 lines in 0.81 seconds
