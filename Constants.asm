@@ -289,7 +289,7 @@ Crash_Sfx                equ $006C
 Jump_Sfx                 equ $00A0
 Level_Projectile_Sfx     equ $00A5
 Underwater_Sfx           equ $0079
-Boss_Hit_Sfx             equ $007C
+Boss_Hit_Sfx             equ $00AC
 Hoverpad_Sfx             equ $00D2   ; $0080
 Transporter_Sfx          equ -$7F   ; $0081
 Tunnel_Booster_Sfx       equ -$7E   ; $0082
