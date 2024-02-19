@@ -1,5 +1,5 @@
 Emerald_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Emerald_Voices
 	smpsHeaderChan      $07, $03
 	smpsHeaderTempo     $01, $D5

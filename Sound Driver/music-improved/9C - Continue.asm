@@ -1,5 +1,5 @@
 Continue_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Continue_Voices
 	smpsHeaderChan      $06, $03
 	smpsHeaderTempo     $01, $DB

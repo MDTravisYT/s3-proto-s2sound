@@ -512,15 +512,15 @@ Sound70:	include "sfx-improved/F0 - Oil Slide.asm"
 ;-------------------------------------------------------------------------------
 				align	$F0000
 
-DAC_Table:                                                     ; Offset_0x0F0000
-                dc.w    (((DAC_81_Ptr>>$08)|(DAC_81_Ptr<<$08))&$FFFF)    ; $8036
-                dc.w    (((DAC_82_Ptr>>$08)|(DAC_82_Ptr<<$08))&$FFFF)    ; $803B
-                dc.w    (((DAC_83_Ptr>>$08)|(DAC_83_Ptr<<$08))&$FFFF)    ; $8040
-                dc.w    (((DAC_84_Ptr>>$08)|(DAC_84_Ptr<<$08))&$FFFF)    ; $8045
-                dc.w    (((DAC_85_Ptr>>$08)|(DAC_85_Ptr<<$08))&$FFFF)    ; $804A
-                dc.w    (((DAC_86_Ptr>>$08)|(DAC_86_Ptr<<$08))&$FFFF)    ; $804F
-                dc.w    (((DAC_87_Ptr>>$08)|(DAC_87_Ptr<<$08))&$FFFF)    ; $8054
-                dc.w    (((DAC_88_Ptr>>$08)|(DAC_88_Ptr<<$08))&$FFFF)    ; $8059
+												; Offset_0x0F0000
+				dc.w    (((DKick_Ptr>>$08)|(DKick_Ptr<<$08))&$FFFF)    ; $8036
+				dc.w    (((DSnare_Ptr>>$08)|(DSnare_Ptr<<$08))&$FFFF)    ; $803B
+				dc.w    (((DClap_Ptr>>$08)|(DClap_Ptr<<$08))&$FFFF)    ; $8040
+				dc.w    (((DScratch_Ptr>>$08)|(DScratch_Ptr<<$08))&$FFFF)    ; $8045
+				dc.w    (((DTimpani_Ptr>>$08)|(DTimpani_Ptr<<$08))&$FFFF)    ; $804A
+				dc.w    (((DTom_Ptr>>$08)|(DTom_Ptr<<$08))&$FFFF)    ; $804F
+				dc.w    (((DBongo_Ptr>>$08)|(DBongo_Ptr<<$08))&$FFFF)    ; $8054
+				dc.w    (((DAC_88_Ptr>>$08)|(DAC_88_Ptr<<$08))&$FFFF)    ; $8059
                 dc.w    (((DAC_89_Ptr>>$08)|(DAC_89_Ptr<<$08))&$FFFF)    ; $805E
                 dc.w    (((DAC_8A_Ptr>>$08)|(DAC_8A_Ptr<<$08))&$FFFF)    ; $8063
                 dc.w    (((DAC_8B_Ptr>>$08)|(DAC_8B_Ptr<<$08))&$FFFF)    ; $8068
@@ -530,182 +530,155 @@ DAC_Table:                                                     ; Offset_0x0F0000
                 dc.w    (((DAC_8F_Ptr>>$08)|(DAC_8F_Ptr<<$08))&$FFFF)    ; $807C
                 dc.w    (((DAC_90_Ptr>>$08)|(DAC_90_Ptr<<$08))&$FFFF)    ; $8081
                 dc.w    (((DAC_91_Ptr>>$08)|(DAC_91_Ptr<<$08))&$FFFF)    ; $8086
-                dc.w    (((DAC_92_Ptr>>$08)|(DAC_92_Ptr<<$08))&$FFFF)    ; $808B
-                dc.w    (((DAC_93_Ptr>>$08)|(DAC_93_Ptr<<$08))&$FFFF)    ; $8090
-                dc.w    (((DAC_94_Ptr>>$08)|(DAC_94_Ptr<<$08))&$FFFF)    ; $8095
-                dc.w    (((DAC_95_Ptr>>$08)|(DAC_95_Ptr<<$08))&$FFFF)    ; $809A
-                dc.w    (((DAC_96_Ptr>>$08)|(DAC_96_Ptr<<$08))&$FFFF)    ; $809F
-                dc.w    (((DAC_97_Ptr>>$08)|(DAC_97_Ptr<<$08))&$FFFF)    ; $80A4
-                dc.w    (((DAC_98_Ptr>>$08)|(DAC_98_Ptr<<$08))&$FFFF)    ; $80A9
-                dc.w    (((DAC_99_Ptr>>$08)|(DAC_99_Ptr<<$08))&$FFFF)    ; $80AE
-                dc.w    (((DAC_9A_Ptr>>$08)|(DAC_9A_Ptr<<$08))&$FFFF)    ; $80B3
-                dc.w    (((DAC_9B_Ptr>>$08)|(DAC_9B_Ptr<<$08))&$FFFF)    ; $80B8                    
+
+
                          
-DAC_81_Setup:                                                  ; Offset_0x0F0036
-                dc.b    $04
-                dc.w    (((DAC_81_Size>>$08)|(DAC_81_Size<<$08))&$FFFF)         ; $0790
-                dc.w    (((DAC_81_Data_Ptr>>$08)|(DAC_81_Data_Ptr<<$08))&$FFFF) ; $83BD                
-DAC_82_Setup:                                                  ; Offset_0x0F003B
-                dc.b    $0E
-                dc.w    (((DAC_82_To_85_Size>>$08)|(DAC_82_To_85_Size<<$08))&$FFFF)         ; $04C0
-                dc.w    (((DAC_82_To_85_Data_Ptr>>$08)|(DAC_82_To_85_Data_Ptr<<$08))&$FFFF) ; $8B4D
-DAC_83_Setup:                                                  ; Offset_0x0F0040
-                dc.b    $14
-                dc.w    (((DAC_82_To_85_Size>>$08)|(DAC_82_To_85_Size<<$08))&$FFFF)         ; $04C0
-                dc.w    (((DAC_82_To_85_Data_Ptr>>$08)|(DAC_82_To_85_Data_Ptr<<$08))&$FFFF) ; $8B4D
-DAC_84_Setup:                                                  ; Offset_0x0F0045
-                dc.b    $1A
-                dc.w    (((DAC_82_To_85_Size>>$08)|(DAC_82_To_85_Size<<$08))&$FFFF)         ; $04C0
-                dc.w    (((DAC_82_To_85_Data_Ptr>>$08)|(DAC_82_To_85_Data_Ptr<<$08))&$FFFF) ; $8B4D
-DAC_85_Setup:                                                  ; Offset_0x0F004A
-                dc.b    $20
-                dc.w    (((DAC_82_To_85_Size>>$08)|(DAC_82_To_85_Size<<$08))&$FFFF)         ; $04C0
-                dc.w    (((DAC_82_To_85_Data_Ptr>>$08)|(DAC_82_To_85_Data_Ptr<<$08))&$FFFF) ; $8B4D
-DAC_86_Setup:                                                  ; Offset_0x0F004F
-                dc.b    $04
-                dc.w    (((DAC_86_Size>>$08)|(DAC_86_Size<<$08))&$FFFF)         ; $0300
-                dc.w    (((DAC_86_Data_Ptr>>$08)|(DAC_86_Data_Ptr<<$08))&$FFFF) ; $80BD 
-DAC_87_Setup:                                                  ; Offset_0x0F0054
-                dc.b    $04
-                dc.w    (((DAC_87_Size>>$08)|(DAC_87_Size<<$08))&$FFFF)         ; $0740 
-                dc.w    (((DAC_87_Data_Ptr>>$08)|(DAC_87_Data_Ptr<<$08))&$FFFF) ; $B8D8
-DAC_88_Setup:                                                  ; Offset_0x0F0059
+DKick_Setup:                                                  ; Offset_0x0F0036
+                dc.b    $17
+                dc.w    (((DKick_Size>>$08)|(DKick_Size<<$08))&$FFFF)         ; $0790
+                dc.w    (((DKick_Data_Ptr>>$08)|(DKick_Data_Ptr<<$08))&$FFFF) ; $83BD                
+DSnare_Setup:                                                  ; Offset_0x0F003B
+                dc.b    $01
+                dc.w    (((DSnare_Size>>$08)|(DSnare_Size<<$08))&$FFFF)         ; $04C0
+                dc.w    (((DSnare_Data_Ptr>>$08)|(DSnare_Data_Ptr<<$08))&$FFFF) ; $8B4D
+DClap_Setup:                                                  ; Offset_0x0F0040
                 dc.b    $06
-                dc.w    (((DAC_88_Size>>$08)|(DAC_88_Size<<$08))&$FFFF)         ; $1250
-                dc.w    (((DAC_88_Data_Ptr>>$08)|(DAC_88_Data_Ptr<<$08))&$FFFF) ; $9FED
-DAC_89_Setup:                                                  ; Offset_0x0F005E
-                dc.b    $0A
-                dc.w    (((DAC_89_Size>>$08)|(DAC_89_Size<<$08))&$FFFF)         ; $0A20 
-                dc.w    (((DAC_89_Data_Ptr>>$08)|(DAC_89_Data_Ptr<<$08))&$FFFF) ; $C528
-DAC_8A_Setup:                                                  ; Offset_0x0F0063
-                dc.b    $14
-                dc.w    (((DAC_8A_To_8B_Size>>$08)|(DAC_8A_To_8B_Size<<$08))&$FFFF)         ; $0160
-                dc.w    (((DAC_8A_To_8B_Data_Ptr>>$08)|(DAC_8A_To_8B_Data_Ptr<<$08))&$FFFF) ; $B23D
-DAC_8B_Setup:                                                  ; Offset_0x0F0068
+                dc.w    (((DClap_Size>>$08)|(DClap_Size<<$08))&$FFFF)         ; $04C0
+                dc.w    (((DClap_Data_Ptr>>$08)|(DClap_Data_Ptr<<$08))&$FFFF) ; $8B4D
+DScratch_Setup:                                                  ; Offset_0x0F0045
+                dc.b    $08
+                dc.w    (((DScratch_Size>>$08)|(DScratch_Size<<$08))&$FFFF)         ; $04C0
+                dc.w    (((DScratch_Data_Ptr>>$08)|(DScratch_Data_Ptr<<$08))&$FFFF) ; $8B4D
+DTimpani_Setup:                                                  ; Offset_0x0F004A
                 dc.b    $1B
-                dc.w    (((DAC_8A_To_8B_Size>>$08)|(DAC_8A_To_8B_Size<<$08))&$FFFF)         ; $0160
-                dc.w    (((DAC_8A_To_8B_Data_Ptr>>$08)|(DAC_8A_To_8B_Data_Ptr<<$08))&$FFFF) ; $B23D
-DAC_8C_Setup:                                                  ; Offset_0x0F006D
-                dc.b    $08
-                dc.w    (((DAC_8C_Size>>$08)|(DAC_8C_Size<<$08))&$FFFF)         ; $006B
-                dc.w    (((DAC_8C_Data_Ptr>>$08)|(DAC_8C_Data_Ptr<<$08))&$FFFF) ; $B39D
-DAC_8D_Setup:                                                  ; Offset_0x0F0072
-                dc.b    $0B
-                dc.w    (((DAC_8D_To_8E_Size>>$08)|(DAC_8D_To_8E_Size<<$08))&$FFFF)         ; $04D0
-                dc.w    (((DAC_8D_To_8E_Data_Ptr>>$08)|(DAC_8D_To_8E_Data_Ptr<<$08))&$FFFF) ; $B408
-DAC_8E_Setup:                                                  ; Offset_0x0F0077
-                dc.b    $11
-                dc.w    (((DAC_8D_To_8E_Size>>$08)|(DAC_8D_To_8E_Size<<$08))&$FFFF)         ; $04D0
-                dc.w    (((DAC_8D_To_8E_Data_Ptr>>$08)|(DAC_8D_To_8E_Data_Ptr<<$08))&$FFFF) ; $B408
-DAC_8F_Setup:                                                  ; Offset_0x0F007C
-                dc.b    $08
-                dc.w    (((DAC_8F_Size>>$08)|(DAC_8F_Size<<$08))&$FFFF)         ; $0510 
-                dc.w    (((DAC_8F_Data_Ptr>>$08)|(DAC_8F_Data_Ptr<<$08))&$FFFF) ; $C018
-DAC_90_Setup:                                                  ; Offset_0x0F0081
-                dc.b    $03
-                dc.w    (((DAC_90_To_93_Size>>$08)|(DAC_90_To_93_Size<<$08))&$FFFF)         ; $0650
-                dc.w    (((DAC_90_To_93_Data_Ptr>>$08)|(DAC_90_To_93_Data_Ptr<<$08))&$FFFF) ; $999D
-DAC_91_Setup:                                                  ; Offset_0x0F0086
-                dc.b    $07
-                dc.w    (((DAC_90_To_93_Size>>$08)|(DAC_90_To_93_Size<<$08))&$FFFF)         ; $0650
-                dc.w    (((DAC_90_To_93_Data_Ptr>>$08)|(DAC_90_To_93_Data_Ptr<<$08))&$FFFF) ; $999D
-DAC_92_Setup:                                                  ; Offset_0x0F008B
+                dc.w    (((DTimpani_Size>>$08)|(DTimpani_Size<<$08))&$FFFF)         ; $04C0
+                dc.w    (((DTimpani_Data_Ptr>>$08)|(DTimpani_Data_Ptr<<$08))&$FFFF) ; $8B4D
+DTom_Setup:                                                  ; Offset_0x0F004F
                 dc.b    $0A
-                dc.w    (((DAC_90_To_93_Size>>$08)|(DAC_90_To_93_Size<<$08))&$FFFF)         ; $0650
-                dc.w    (((DAC_90_To_93_Data_Ptr>>$08)|(DAC_90_To_93_Data_Ptr<<$08))&$FFFF) ; $999D
-DAC_93_Setup:                                                  ; Offset_0x0F0090
-                dc.b    $0E
-                dc.w    (((DAC_90_To_93_Size>>$08)|(DAC_90_To_93_Size<<$08))&$FFFF)         ; $0650
-                dc.w    (((DAC_90_To_93_Data_Ptr>>$08)|(DAC_90_To_93_Data_Ptr<<$08))&$FFFF) ; $999D
-DAC_94_Setup:                                                  ; Offset_0x0F0095
-                dc.b    $06
-                dc.w    (((DAC_94_To_97_Size>>$08)|(DAC_94_To_97_Size<<$08))&$FFFF)         ; $0990
-                dc.w    (((DAC_94_To_97_Data_Ptr>>$08)|(DAC_94_To_97_Data_Ptr<<$08))&$FFFF) ; $900D
-DAC_95_Setup:                                                  ; Offset_0x0F009A
-                dc.b    $0A
-                dc.w    (((DAC_94_To_97_Size>>$08)|(DAC_94_To_97_Size<<$08))&$FFFF)         ; $0990
-                dc.w    (((DAC_94_To_97_Data_Ptr>>$08)|(DAC_94_To_97_Data_Ptr<<$08))&$FFFF) ; $900D
-DAC_96_Setup:                                                  ; Offset_0x0F009F
-                dc.b    $0D
-                dc.w    (((DAC_94_To_97_Size>>$08)|(DAC_94_To_97_Size<<$08))&$FFFF)         ; $0990
-                dc.w    (((DAC_94_To_97_Data_Ptr>>$08)|(DAC_94_To_97_Data_Ptr<<$08))&$FFFF) ; $900D
-DAC_97_Setup:                                                  ; Offset_0x0F00A4
+                dc.w    (((DTom_Size>>$08)|(DTom_Size<<$08))&$FFFF)         ; $0300
+                dc.w    (((DTom_Data_Ptr>>$08)|(DTom_Data_Ptr<<$08))&$FFFF) ; $80BD 
+DBongo_Setup:                                                  ; Offset_0x0F0054
+                dc.b    $1B
+                dc.w    (((DBongo_Size>>$08)|(DBongo_Size<<$08))&$FFFF)         ; $0740 
+                dc.w    (((DBongo_Data_Ptr>>$08)|(DBongo_Data_Ptr<<$08))&$FFFF) ; $B8D8
+DAC_88_Setup:                                                  ; Offset_0x0F0054
                 dc.b    $12
-                dc.w    (((DAC_94_To_97_Size>>$08)|(DAC_94_To_97_Size<<$08))&$FFFF)         ; $0990
-                dc.w    (((DAC_94_To_97_Data_Ptr>>$08)|(DAC_94_To_97_Data_Ptr<<$08))&$FFFF) ; $900D
-DAC_98_Setup:                                                  ; Offset_0x0F00A9
+                dc.w    (((DTimpani_Size>>$08)|(DTimpani_Size<<$08))&$FFFF)         ; $04C0
+                dc.w    (((DTimpani_Data_Ptr>>$08)|(DTimpani_Data_Ptr<<$08))&$FFFF) ; $8B4D
+DAC_89_Setup:                                                  ; Offset_0x0F004A
+                dc.b    $15
+                dc.w    (((DTimpani_Size>>$08)|(DTimpani_Size<<$08))&$FFFF)         ; $04C0
+                dc.w    (((DTimpani_Data_Ptr>>$08)|(DTimpani_Data_Ptr<<$08))&$FFFF) ; $8B4D
+DAC_8A_Setup:                                                  ; Offset_0x0F004A
+                dc.b    $1C
+                dc.w    (((DTimpani_Size>>$08)|(DTimpani_Size<<$08))&$FFFF)         ; $04C0
+                dc.w    (((DTimpani_Data_Ptr>>$08)|(DTimpani_Data_Ptr<<$08))&$FFFF) ; $8B4D
+DAC_8B_Setup:                                                  ; Offset_0x0F004A
+                dc.b    $1D
+                dc.w    (((DTimpani_Size>>$08)|(DTimpani_Size<<$08))&$FFFF)         ; $04C0
+                dc.w    (((DTimpani_Data_Ptr>>$08)|(DTimpani_Data_Ptr<<$08))&$FFFF) ; $8B4D
+DAC_8C_Setup:                                                  ; Offset_0x0F004F
+                dc.b    $02
+                dc.w    (((DTom_Size>>$08)|(DTom_Size<<$08))&$FFFF)         ; $0300
+                dc.w    (((DTom_Data_Ptr>>$08)|(DTom_Data_Ptr<<$08))&$FFFF) ; $80BD 
+DAC_8D_Setup:                                                  ; Offset_0x0F004F
+                dc.b    $05
+                dc.w    (((DTom_Size>>$08)|(DTom_Size<<$08))&$FFFF)         ; $0300
+                dc.w    (((DTom_Data_Ptr>>$08)|(DTom_Data_Ptr<<$08))&$FFFF) ; $80BD 
+DAC_8E_Setup:                                                  ; Offset_0x0F004F
+                dc.b    $08
+                dc.w    (((DTom_Size>>$08)|(DTom_Size<<$08))&$FFFF)         ; $0300
+                dc.w    (((DTom_Data_Ptr>>$08)|(DTom_Data_Ptr<<$08))&$FFFF) ; $80BD 
+DAC_8F_Setup:                                                  ; Offset_0x0F0054
+                dc.b    $08
+                dc.w    (((DBongo_Size>>$08)|(DBongo_Size<<$08))&$FFFF)         ; $0740 
+                dc.w    (((DBongo_Data_Ptr>>$08)|(DBongo_Data_Ptr<<$08))&$FFFF) ; $B8D8
+DAC_90_Setup:                                                  ; Offset_0x0F0054
                 dc.b    $0B
-                dc.w    (((DAC_98_To_9A_Size>>$08)|(DAC_98_To_9A_Size<<$08))&$FFFF)         ; $0D1F
-                dc.w    (((DAC_98_To_9A_Data_Ptr>>$08)|(DAC_98_To_9A_Data_Ptr<<$08))&$FFFF) ; $CF48
-DAC_99_Setup:                                                  ; Offset_0x0F00AE
-                dc.b    $13
-                dc.w    (((DAC_98_To_9A_Size>>$08)|(DAC_98_To_9A_Size<<$08))&$FFFF)         ; $0D1F
-                dc.w    (((DAC_98_To_9A_Data_Ptr>>$08)|(DAC_98_To_9A_Data_Ptr<<$08))&$FFFF) ; $CF48
-DAC_9A_Setup:                                                  ; Offset_0x0F00B3
-                dc.b    $16
-                dc.w    (((DAC_98_To_9A_Size>>$08)|(DAC_98_To_9A_Size<<$08))&$FFFF)         ; $0D1F
-                dc.w    (((DAC_98_To_9A_Data_Ptr>>$08)|(DAC_98_To_9A_Data_Ptr<<$08))&$FFFF) ; $CF48
-DAC_9B_Setup:                                                  ; Offset_0x0F00B8
+                dc.w    (((DBongo_Size>>$08)|(DBongo_Size<<$08))&$FFFF)         ; $0740 
+                dc.w    (((DBongo_Data_Ptr>>$08)|(DBongo_Data_Ptr<<$08))&$FFFF) ; $B8D8
+DAC_91_Setup:                                                  ; Offset_0x0F0054
                 dc.b    $12
-                dc.w    (((DAC_9B_Size>>$08)|(DAC_9B_Size<<$08))&$FFFF)         ; $169D  
-                dc.w    (((DAC_9B_Data_Ptr>>$08)|(DAC_9B_Data_Ptr<<$08))&$FFFF) ; $DC67
+                dc.w    (((DBongo_Size>>$08)|(DBongo_Size<<$08))&$FFFF)         ; $0740 
+                dc.w    (((DBongo_Data_Ptr>>$08)|(DBongo_Data_Ptr<<$08))&$FFFF) ; $B8D8
+
                 
 ;-------------------------------------------------------------------------------
-DAC_86_Data:                                                   ; Offset_0x0F00BD
-                binclude  "sounds\dacs\dac_86.bin"
-DAC_86_Data_End:                  
-;-------------------------------------------------------------------------------                          
-DAC_81_Data:                                                   ; Offset_0x0F03BD
-                binclude  "sounds\dacs\dac_81.bin" 
-DAC_81_Data_End:  
-;-------------------------------------------------------------------------------
-DAC_82_To_85_Data:                                             ; Offset_0x0F0B4D
-                binclude  "sounds\dacs\dac82-85.bin" 
-DAC_82_To_85_Data_End:  
-;-------------------------------------------------------------------------------
-DAC_94_To_97_Data:                                             ; Offset_0x0F100D
-                binclude  "sounds\dacs\dac94-97.bin" 
-DAC_94_To_97_Data_End: 
-;-------------------------------------------------------------------------------
-DAC_90_To_93_Data:                                             ; Offset_0x0F199D
-                binclude  "sounds\dacs\dac90-93.bin" 
-DAC_90_To_93_Data_End:       
-;-------------------------------------------------------------------------------
-DAC_88_Data:                                                   ; Offset_0x0F1FED
-                binclude  "sounds\dacs\dac_88.bin" 
-DAC_88_Data_End:  
-;-------------------------------------------------------------------------------
-DAC_8A_To_8B_Data:                                             ; Offset_0x0F323D
-                binclude  "sounds\dacs\dac8A-8B.bin" 
-DAC_8A_To_8B_Data_End:     
-;-------------------------------------------------------------------------------
-DAC_8C_Data:                                                   ; Offset_0x0F339D
-                binclude  "sounds\dacs\dac_8C.bin" 
-DAC_8C_Data_End:   
-;-------------------------------------------------------------------------------
-DAC_8D_To_8E_Data:                                             ; Offset_0x0F3408
-                binclude  "sounds\dacs\dac8D-8E.bin" 
-DAC_8D_To_8E_Data_End:                    
-;-------------------------------------------------------------------------------
-DAC_87_Data:                                                   ; Offset_0x0F38D8
-                binclude  "sounds\dacs\dac_87.bin" 
-DAC_87_Data_End:   
-;-------------------------------------------------------------------------------
-DAC_8F_Data:                                                   ; Offset_0x0F4018
-                binclude  "sounds\dacs\dac_8F.bin" 
-DAC_8F_Data_End:
-;-------------------------------------------------------------------------------
-DAC_89_Data:                                                   ; Offset_0x0F4528
-                binclude  "sounds\dacs\dac_89.bin" 
-DAC_89_Data_End:
-;-------------------------------------------------------------------------------
-DAC_98_To_9A_Data:                                             ; Offset_0x0F4F48
-                binclude  "sounds\dacs\dac98-9A.bin" 
-DAC_98_To_9A_Data_End:  
-;-------------------------------------------------------------------------------
-DAC_9B_Data:                                                   ; Offset_0x0F5C67
-                binclude  "sounds\dacs\dac_9B.bin" 
-DAC_9B_Data_End:
+SndDAC_Start:
+
+DKick_Data:
+	BINCLUDE	"DAC/Kick.dpcm"
+DKick_Data_End
+
+DSnare_Data:
+	BINCLUDE	"DAC/Snare.dpcm"
+DSnare_Data_End
+
+DClap_Data:
+	BINCLUDE	"DAC/Clap.dpcm"
+DClap_Data_End
+	
+DScratch_Data:
+	BINCLUDE	"DAC/Scratch.dpcm"
+DScratch_Data_End
+
+DTimpani_Data:
+	BINCLUDE	"DAC/Timpani.dpcm"
+DTimpani_Data_End
+
+DTom_Data:
+	BINCLUDE	"DAC/Tom.dpcm"
+DTom_Data_End
+
+DBongo_Data:
+	BINCLUDE	"DAC/Bongo.dpcm"
+DBongo_Data_End
+
+SndDAC_End
+
+DKick_Ptr      equ (DKick_Setup&$FFFF)|$8000
+DSnare_Ptr      equ (DSnare_Setup&$FFFF)|$8000
+DClap_Ptr      equ (DClap_Setup&$FFFF)|$8000
+DScratch_Ptr      equ (DScratch_Setup&$FFFF)|$8000
+DTimpani_Ptr      equ (DTimpani_Setup&$FFFF)|$8000
+DTom_Ptr      equ (DTom_Setup&$FFFF)|$8000
+DBongo_Ptr      equ (DBongo_Setup&$FFFF)|$8000
+DAC_88_Ptr      equ (DAC_88_Setup&$FFFF)|$8000
+DAC_89_Ptr      equ (DAC_89_Setup&$FFFF)|$8000
+DAC_8A_Ptr      equ (DAC_8A_Setup&$FFFF)|$8000
+DAC_8B_Ptr      equ (DAC_8B_Setup&$FFFF)|$8000
+DAC_8C_Ptr      equ (DAC_8C_Setup&$FFFF)|$8000
+DAC_8D_Ptr      equ (DAC_8D_Setup&$FFFF)|$8000
+DAC_8E_Ptr      equ (DAC_8E_Setup&$FFFF)|$8000
+DAC_8F_Ptr      equ (DAC_8F_Setup&$FFFF)|$8000
+DAC_90_Ptr      equ (DAC_90_Setup&$FFFF)|$8000
+DAC_91_Ptr      equ (DAC_91_Setup&$FFFF)|$8000
+;DAC_92_Ptr      equ (DAC_92_Setup&$FFFF)|$8000
+;DAC_93_Ptr      equ (DAC_93_Setup&$FFFF)|$8000
+;DAC_94_Ptr      equ (DAC_94_Setup&$FFFF)|$8000
+;DAC_95_Ptr      equ (DAC_95_Setup&$FFFF)|$8000
+;DAC_96_Ptr      equ (DAC_96_Setup&$FFFF)|$8000
+;DAC_97_Ptr      equ (DAC_97_Setup&$FFFF)|$8000
+;DAC_98_Ptr      equ (DAC_98_Setup&$FFFF)|$8000
+;DAC_99_Ptr      equ (DAC_99_Setup&$FFFF)|$8000
+;DAC_9A_Ptr      equ (DAC_9A_Setup&$FFFF)|$8000
+;DAC_9B_Ptr      equ (DAC_9B_Setup&$FFFF)|$8000
+
+DKick_Size         equ (DKick_Data_End-DKick_Data)  
+DKick_Data_Ptr     equ (DKick_Data&$FFFF)|$8000 
+DSnare_Size     	equ (DSnare_Data_End-DSnare_Data)  
+DSnare_Data_Ptr 	equ (DSnare_Data&$FFFF)|$8000 
+DClap_Size     	equ (DClap_Data_End-DClap_Data)  
+DClap_Data_Ptr 	equ (DClap_Data&$FFFF)|$8000 
+DScratch_Size     	equ (DScratch_Data_End-DScratch_Data)  
+DScratch_Data_Ptr 	equ (DScratch_Data&$FFFF)|$8000 
+DTimpani_Size     	equ (DTimpani_Data_End-DTimpani_Data)  
+DTimpani_Data_Ptr 	equ (DTimpani_Data&$FFFF)|$8000 
+DTom_Size         equ (DTom_Data_End-DTom_Data)   
+DTom_Data_Ptr     equ (DTom_Data&$FFFF)|$8000
+DBongo_Size         equ (DBongo_Data_End-DBongo_Data)   
+DBongo_Data_Ptr     equ (DBongo_Data&$FFFF)|$8000
+
 ;-------------------------------------------------------------------------------
 Offset_0x0F7304:
                 align	$8000

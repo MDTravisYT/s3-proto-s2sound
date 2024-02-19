@@ -1,5 +1,5 @@
 SpecStg_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     SpecStg_Voices
 	smpsHeaderChan      $06, $03
 	smpsHeaderTempo     $01, $FF

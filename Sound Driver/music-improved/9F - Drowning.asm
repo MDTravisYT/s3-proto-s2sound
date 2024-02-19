@@ -1,5 +1,5 @@
 Drowning_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Drowning_Voices
 	smpsHeaderChan      $06, $00
 	smpsHeaderTempo     $01, $80
