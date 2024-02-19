@@ -22,153 +22,69 @@ use_sk_samples			= 1
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 ; Z80 Bank $16
     ;            align   $8000
-Angel_Island_1_Snd_Data:                                       ; Offset_0x0B0000
-                binclude  "sounds\aiz_1.snd"
-Angel_Island_2_Snd_Data:                                       ; Offset_0x0B2210
-                binclude  "sounds\aiz_2.snd"
-Hydrocity_1_Snd_Data:                                          ; Offset_0x0B3F24
-                binclude  "sounds\hz_1.snd"                
-Hydrocity_2_Snd_Data:                                          ; Offset_0x0B5492
-                binclude  "sounds\hz_2.snd"
-Marble_Garden_1_Snd_Data:                                      ; Offset_0x0B6E51
-                binclude  "sounds\mgz_1.snd"  
-Marble_Garden_2_Snd_Data:                                      ; Offset_0x0B7468
-                binclude  "sounds\mgz_2.snd"
+
 ; Z80 Bank $17    
                 align   $8000
-Carnival_Night_1_Snd_Data:                                     ; Offset_0x0B8000
-                binclude  "sounds\cnz_1.snd"
-Carnival_Night_2_Snd_Data:                                     ; Offset_0x0B9BBB
-                binclude  "sounds\cnz_2.snd"                                                             
-Flying_Battery_1_Snd_Data:                                     ; Offset_0x0BB99E
-                binclude  "sounds\fbz_1.snd" 
-Flying_Battery_2_Snd_Data:                                     ; Offset_0x0BBF36
-                binclude  "sounds\fbz_2.snd"                                               
-Icecap_1_Snd_Data:                                             ; Offset_0x0BC499
-                binclude  "sounds\iz_1.snd"
-Icecap_2_Snd_Data:                                             ; Offset_0x0BCA37
-                binclude  "sounds\iz_2.snd"   
-Launch_Base_1_Snd_Data:                                        ; Offset_0x0BD04B
-                binclude  "sounds\lbz_1.snd"   
+Music_01:	include		"music-improved/81 - 2 Player Menu.asm"
+Music_02:		include		"music-improved/82 - EHZ.asm"
+Music_03:		include		"music-improved/83 - MCZ 2P.asm"
+Music_04:		include		"music-improved/84 - OOZ.asm"
+Music_05:		include		"music-improved/85 - MTZ.asm"
+Music_06:		include		"music-improved/86 - HTZ.asm"
 ;-------------------------------------------------------------------------------
 
 ;-------------------------------------------------------------------------------                
 ; Z80 Bank $18
                 align   $8000
-Launch_Base_2_Snd_Data:                                        ; Offset_0x0C0000
-                binclude  "sounds\lbz_2.snd"                                              
-Mushroom_Valley_1_Snd_Data:                                    ; Offset_0x0C252A
-                binclude  "sounds\mvz_1.snd" 
-Mushroom_Valley_2_Snd_Data:                                    ; Offset_0x0C2A9C
-                binclude  "sounds\mvz_2.snd" 
-Sandopolis_1_Snd_Data:                                         ; Offset_0x0C3005
-                binclude  "sounds\sz_1.snd" 
-Sandopolis_2_Snd_Data:                                         ; Offset_0x0C366F
-                binclude  "sounds\sz_2.snd" 
-Lava_Reef_1_Snd_Data:                                          ; Offset_0x0C3C62
-                binclude  "sounds\lrz_1.snd" 
-Lava_Reef_2_Snd_Data:                                          ; Offset_0x0C504F
-                binclude  "sounds\lrz_2.snd" 
-Sky_Sanctuary_Snd_Data:                                        ; Offset_0x0C6642
-                binclude  "sounds\ssz.snd" 
-Death_Egg_1_Snd_Data:                                          ; Offset_0x0C7954
-                binclude  "sounds\dez_1.snd" 
+Music_07:	include		"music-improved/87 - ARZ.asm"
+Music_08:	include		"music-improved/88 - CNZ 2P.asm"
+Music_09:	include		"music-improved/89 - CNZ.asm"
+Music_0A:	include		"music-improved/8A - DEZ.asm"
+Music_0B:	include		"music-improved/8B - MCZ.asm"
 ; Z80 Bank $19  
                 align   $8000
-Death_Egg_2_Snd_Data:                                          ; Offset_0x0C8000
-                binclude  "sounds\dez_2.snd"
-Mini_Boss_Snd_Data:                                            ; Offset_0x0C8412
-                binclude  "sounds\miniboss.snd"
-Boss_Snd_Data:                                                 ; Offset_0x0C8742
-                binclude  "sounds\boss.snd"
-The_Doomsday_Snd_Data:                                         ; Offset_0x0C8C3E
-                binclude  "sounds\tdz.snd"
-Glowing_Spheres_Bonus_Stage_Snd_Data:                          ; Offset_0x0C9521
-                binclude  "sounds\gs_bs.snd"
-Special_Stage_Snd_Data:                                        ; Offset_0x0C9A84
-                binclude  "sounds\ss.snd"
-Slot_Machine_Bonus_Stage_Snd_Data:                             ; Offset_0x0CA31C
-                binclude  "sounds\sm_bs.snd"
-Gumball_Machine_Bonus_Stage_Snd_Data:                          ; Offset_0x0CAE04
-                binclude  "sounds\gm_bs.snd"
-Knuckles_Theme_Snd_Data:                                       ; Offset_0x0CBB19
-                binclude  "sounds\knuckles.snd"
-Azure_Lake_Snd_Data:                                           ; Offset_0x0CBE82
-                binclude  "sounds\alz.snd"
-Balloon_Park_Snd_Data:                                         ; Offset_0x0CC988
-                binclude  "sounds\bpz.snd"
-Desert_Palace_Snd_Data:                                        ; Offset_0x0CD620
-                binclude  "sounds\dpz.snd"
+Music_0C:	include		"music-improved/8C - EHZ 2P.asm"
+Music_0D:	include		"music-improved/8D - SCZ.asm"
+Music_0E:	include		"music-improved/8E - CPZ.asm"
+Music_0F:	include		"music-improved/8F - WFZ.asm"
+Music_10:	include		"music-improved/90 - HPZ.asm"
+Music_11:	include		"music-improved/91 - Options.asm"
 ;-------------------------------------------------------------------------------                
-Asm_Code_3:                                                    ; Offset_0x0CF962
-                dc.b    $0A
-                dc.b    '                Lea     ScrollBBase+($b*64)+(27*2),A1', $0D, $0A
-                dc.b    '                Jsr     Word_2GVRAM    ', $0D, $0A    
-                dc.b    '                Move.w  #AsciiOffset+CHR_Palette0+CHR_HighPri,D5 ; Color is different if in impulse.', $0D, $0A, $0D, $0A
-                dc.b    '                Bra     @DoneSeperators', $0D, $0A, $0D, $0A
-                dc.b    '@NotImpulse:', $0D, $0A
-                dc.b    "                Move.w  #AsciiOffset+CHR_Palette3+CHR_HighPri+'.',D0        ; Place decimal points and '/' seperators.", $0D, $0A
-                dc.b    '                Lea     ScrollBBase+($5*64)+(28*2),A1           ', $0D, $0A           
-                dc.b    '                Jsr     Word_2GVRAM     ', $0D, $0A     
-                dc.b    '                Lea     ScrollBBase+($7*64)+(27*2),A1', $0D, $0A
-                dc.b    '                Jsr     Word_2GVRAM     ', $0D, $0A     
-                dc.b    '                Lea     ScrollBBase+($d*64)+(28*2),A1', $0D, $0A
-                dc.b    '                Jsr     Word_2GVRAM     ', $0D, $0A     
-                dc.b    "                Move.w  #AsciiOffset+CHR_Palette3+CHR_HighPri+'/',D0  ", $0D, $0A  
-                dc.b    '                Lea     ScrollBBase+($9*64)+(27*2),A1', $0D, $0A
-                dc.b    '                Jsr     Word_2GVRAM    ', $0D, $0A    
-                dc.b    '                Lea     ScrollBBase+($b*64)+(27*2),A1', $0D, $0A
-                dc.b    '                Jsr     Word_2GVRAM    ', $0D, $0A    
-                dc.b    '                Move.w  #AsciiOffset+CHR_Palette3+CHR_HighPri,D5 ; Set up character color.', $0D, $0A, $0D, $0A
-                dc.b    '@DoneSeperators:', $0D, $0A
-                dc.b    '                Move.w  CurrentDistance,D7                      ; Get whole part of DISTANCE.', $0D, $0A
-                dc.b    '                Moveq   #3,D6                                   ; Three characters.', $0D, $0A
-                dc.b    "                Moveq   #'$',D2                                 ; Lead with a spaces.", $0D, $0A
-                dc.b    '                Lea     ScrollBBase+($5*64)+(25*2),A1           ; Screen destination.', $0D, $0A
-                dc.b    '                Jsr     PrintVal                                ; Print it.', $0D, $0A
-                dc.b    '                Move.w  CurrentDistance+2,D7                    ; Get fractional part of DISTANCE.', $0D, $0A
-                dc.b    '                Moveq   #2,D6                                   ; Two digits.', $0D, $0A
-                dc.b    "                Move.w  #'0'"
 ;-------------------------------------------------------------------------------                                
 ; Z80 Bank $1A
                 align   $8000
-Chrome_Gadget_Snd_Data:                                        ; Offset_0x0D0000
-                binclude  "sounds\cgz.snd"
-Endless_Mine_Snd_Data:                                         ; Offset_0x0D224B
-                binclude  "sounds\emz.snd"
-Title_Screen_Snd_Data:                                         ; Offset_0x0D2993
-                binclude  "sounds\ts.snd"
-Credits_Snd_Data:                                              ; Offset_0x0D2DCC
-                binclude  "sounds\credits.snd"
-Time_Game_Over_Snd_Data:                                       ; Offset_0x0D383C
-                binclude  "sounds\tgovr.snd"
-Continue_Snd_Data:                                             ; Offset_0x0D3A99
-                binclude  "sounds\continue.snd"
-Level_Results_Snd_Data:                                        ; Offset_0x0D427A
-                binclude  "sounds\results.snd"
-Extra_Life_Snd_Data:                                           ; Offset_0x0D476A
-                binclude  "sounds\1up.snd"
-Got_Emerald_Snd_Data:                                          ; Offset_0x0D496A
-                binclude  "sounds\emerald.snd"
-Invincibility_Snd_Data:                                        ; Offset_0x0D4A38
-                binclude  "sounds\invcblty.snd"
-Competition_Menu_Snd_Data:                                     ; Offset_0x0D4CB8
-                binclude  "sounds\2p_menu.snd"
-Super_Sonic_Theme_Snd_Data:                                    ; Offset_0x0D5EAA
-                binclude  "sounds\s_sonic.snd"
-Data_Select_Menu_Snd_Data:                                     ; Offset_0x0D695E
-                binclude  "sounds\menu.snd"
+Music_12:	include		"music-improved/92 - Special Stage.asm"
+Music_13:	include		"music-improved/93 - Boss.asm"
+Music_14:	include		"music-improved/94 - Final Boss.asm"
+Music_15:	include		"music-improved/95 - Ending.asm"
+Music_16:	include		"music-improved/96 - Super Sonic.asm"
+Music_17:	include		"music-improved/97 - Invincible.asm"
 ; Z80 Bank $1B
                 align   $8000
-Final_Boss_Snd_Data:                                           ; Offset_0x0D8000
-                binclude  "sounds\f_boss.snd"
-Panic_Snd_Data:                                                ; Offset_0x0D8592
-                binclude  "sounds\panic.snd"                                 
+Music_18:	include		"music-improved/98 - Extra Life.asm"
+Music_19:	include		"music-improved/99 - Title Screen.asm"
+Music_1A:	include		"music-improved/9A - End of Act.asm"
+Music_1B:	include		"music-improved/9B - Game Over.asm"
+Music_1C:	include		"music-improved/9C - Continue.asm"
+Music_1D:	include		"music-improved/9D - Got Emerald.asm"
+Music_1E:	include		"music-improved/9E - Credits.asm"
+Music_1F:	include		"music-improved/9F - Drowning.asm"      
 ;-------------------------------------------------------------------------------
 ; Offset_0x0D86C0:
-		align	$8000
+		align	$10000
 ;-------------------------------------------------------------------------------                                
 Z80_Driver:                                                    ; Offset_0x0E0000
                 binclude  "sounds\z80_drv.bin"
@@ -207,26 +123,7 @@ Z80_Driver:                                                    ; Offset_0x0E0000
                 dc.w    (((Music_1D_Ptr>>$08)|(Music_1D_Ptr<<$08))&$FFFF) ;$A31C
                 dc.w    (((Music_1E_Ptr>>$08)|(Music_1E_Ptr<<$08))&$FFFF) ;$AE04
                 dc.w    (((Music_1F_Ptr>>$08)|(Music_1F_Ptr<<$08))&$FFFF) ;$BB19
-                dc.w    (((Music_20_Ptr>>$08)|(Music_20_Ptr<<$08))&$FFFF) ;$BE82
-                dc.w    (((Music_21_Ptr>>$08)|(Music_21_Ptr<<$08))&$FFFF) ;$C988
-                dc.w    (((Music_22_Ptr>>$08)|(Music_22_Ptr<<$08))&$FFFF) ;$D620
-                
-                dc.w    (((Music_23_Ptr>>$08)|(Music_23_Ptr<<$08))&$FFFF) ;$8000
-                dc.w    (((Music_24_Ptr>>$08)|(Music_24_Ptr<<$08))&$FFFF) ;$A24B
-                dc.w    (((Music_25_Ptr>>$08)|(Music_25_Ptr<<$08))&$FFFF) ;$A993
-                dc.w    (((Music_26_Ptr>>$08)|(Music_26_Ptr<<$08))&$FFFF) ;$ADCC
-                dc.w    (((Music_27_Ptr>>$08)|(Music_27_Ptr<<$08))&$FFFF) ;$B83C
-                dc.w    (((Music_28_Ptr>>$08)|(Music_28_Ptr<<$08))&$FFFF) ;$BA99
-                dc.w    (((Music_29_Ptr>>$08)|(Music_29_Ptr<<$08))&$FFFF) ;$C27A
-                dc.w    (((Music_2A_Ptr>>$08)|(Music_2A_Ptr<<$08))&$FFFF) ;$C76A
-                dc.w    (((Music_2B_Ptr>>$08)|(Music_2B_Ptr<<$08))&$FFFF) ;$C96A
-                dc.w    (((Music_2C_Ptr>>$08)|(Music_2C_Ptr<<$08))&$FFFF) ;$CA38
-                dc.w    (((Music_2D_Ptr>>$08)|(Music_2D_Ptr<<$08))&$FFFF) ;$CCB8
-                dc.w    (((Music_2E_Ptr>>$08)|(Music_2E_Ptr<<$08))&$FFFF) ;$DEAA
-                dc.w    (((Music_2F_Ptr>>$08)|(Music_2F_Ptr<<$08))&$FFFF) ;$E95E
-                
-                dc.w    (((Music_30_Ptr>>$08)|(Music_30_Ptr<<$08))&$FFFF) ;$8000
-                dc.w    (((Music_31_Ptr>>$08)|(Music_31_Ptr<<$08))&$FFFF) ;$8592
+
 
 ; Offset_0x0E1702:
 
@@ -314,6 +211,24 @@ Sfx_70_Ptr   equ     (Sound70&$FFFF)|$8000
 Sfx_NN_Ptr   equ     (SoundNN&$FFFF)|$8000   
 
 
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
+                dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
                 dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
                 dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      
                 dc.w    (((Sfx_NN_Ptr>>$08)|(Sfx_NN_Ptr<<$08))&$FFFF)      

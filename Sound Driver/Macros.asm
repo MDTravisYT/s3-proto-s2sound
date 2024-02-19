@@ -21,55 +21,38 @@ waitZ80:	macro
 		bne.s	.wait
 		endm
 		
-Music_01_Ptr equ (Angel_Island_1_Snd_Data&$FFFF)|$8000
-Music_02_Ptr equ (Angel_Island_2_Snd_Data&$FFFF)|$8000  
-Music_03_Ptr equ (Hydrocity_1_Snd_Data&$FFFF)|$8000 
-Music_04_Ptr equ (Hydrocity_2_Snd_Data&$FFFF)|$8000 
-Music_05_Ptr equ (Marble_Garden_1_Snd_Data&$FFFF)|$8000 
-Music_06_Ptr equ (Marble_Garden_2_Snd_Data&$FFFF)|$8000
-Music_07_Ptr equ (Carnival_Night_1_Snd_Data&$FFFF)|$8000
-Music_08_Ptr equ (Carnival_Night_2_Snd_Data&$FFFF)|$8000
-Music_09_Ptr equ (Flying_Battery_1_Snd_Data&$FFFF)|$8000
-Music_0A_Ptr equ (Flying_Battery_2_Snd_Data&$FFFF)|$8000
-Music_0B_Ptr equ (Icecap_1_Snd_Data&$FFFF)|$8000
-Music_0C_Ptr equ (Icecap_2_Snd_Data&$FFFF)|$8000
-Music_0D_Ptr equ (Launch_Base_1_Snd_Data&$FFFF)|$8000
-Music_0E_Ptr equ (Launch_Base_2_Snd_Data&$FFFF)|$8000
-Music_0F_Ptr equ (Mushroom_Valley_1_Snd_Data&$FFFF)|$8000
-Music_10_Ptr equ (Mushroom_Valley_2_Snd_Data&$FFFF)|$8000
-Music_11_Ptr equ (Sandopolis_1_Snd_Data&$FFFF)|$8000
-Music_12_Ptr equ (Sandopolis_2_Snd_Data&$FFFF)|$8000
-Music_13_Ptr equ (Lava_Reef_1_Snd_Data&$FFFF)|$8000
-Music_14_Ptr equ (Lava_Reef_2_Snd_Data&$FFFF)|$8000
-Music_15_Ptr equ (Sky_Sanctuary_Snd_Data&$FFFF)|$8000
-Music_16_Ptr equ (Death_Egg_1_Snd_Data&$FFFF)|$8000
-Music_17_Ptr equ (Death_Egg_2_Snd_Data&$FFFF)|$8000
-Music_18_Ptr equ (Mini_Boss_Snd_Data&$FFFF)|$8000
-Music_19_Ptr equ (Boss_Snd_Data&$FFFF)|$8000
-Music_1A_Ptr equ (The_Doomsday_Snd_Data&$FFFF)|$8000
-Music_1B_Ptr equ (Glowing_Spheres_Bonus_Stage_Snd_Data&$FFFF)|$8000
-Music_1C_Ptr equ (Special_Stage_Snd_Data&$FFFF)|$8000
-Music_1D_Ptr equ (Slot_Machine_Bonus_Stage_Snd_Data&$FFFF)|$8000
-Music_1E_Ptr equ (Gumball_Machine_Bonus_Stage_Snd_Data&$FFFF)|$8000
-Music_1F_Ptr equ (Knuckles_Theme_Snd_Data&$FFFF)|$8000
-Music_20_Ptr equ (Azure_Lake_Snd_Data&$FFFF)|$8000
-Music_21_Ptr equ (Balloon_Park_Snd_Data&$FFFF)|$8000
-Music_22_Ptr equ (Desert_Palace_Snd_Data&$FFFF)|$8000
-Music_23_Ptr equ (Chrome_Gadget_Snd_Data&$FFFF)|$8000
-Music_24_Ptr equ (Endless_Mine_Snd_Data&$FFFF)|$8000
-Music_25_Ptr equ (Title_Screen_Snd_Data&$FFFF)|$8000
-Music_26_Ptr equ (Credits_Snd_Data&$FFFF)|$8000
-Music_27_Ptr equ (Time_Game_Over_Snd_Data&$FFFF)|$8000
-Music_28_Ptr equ (Continue_Snd_Data&$FFFF)|$8000
-Music_29_Ptr equ (Level_Results_Snd_Data&$FFFF)|$8000
-Music_2A_Ptr equ (Extra_Life_Snd_Data&$FFFF)|$8000
-Music_2B_Ptr equ (Got_Emerald_Snd_Data&$FFFF)|$8000
-Music_2C_Ptr equ (Invincibility_Snd_Data&$FFFF)|$8000
-Music_2D_Ptr equ (Competition_Menu_Snd_Data&$FFFF)|$8000
-Music_2E_Ptr equ (Super_Sonic_Theme_Snd_Data&$FFFF)|$8000
-Music_2F_Ptr equ (Data_Select_Menu_Snd_Data&$FFFF)|$8000
-Music_30_Ptr equ (Final_Boss_Snd_Data&$FFFF)|$8000
-Music_31_Ptr equ (Panic_Snd_Data&$FFFF)|$8000
+Music_01_Ptr equ (Music_01&$FFFF)|$8000
+Music_02_Ptr equ (Music_02&$FFFF)|$8000
+Music_03_Ptr equ (Music_03&$FFFF)|$8000
+Music_04_Ptr equ (Music_04&$FFFF)|$8000
+Music_05_Ptr equ (Music_05&$FFFF)|$8000
+Music_06_Ptr equ (Music_06&$FFFF)|$8000
+Music_07_Ptr equ (Music_07&$FFFF)|$8000
+Music_08_Ptr equ (Music_08&$FFFF)|$8000
+Music_09_Ptr equ (Music_09&$FFFF)|$8000
+Music_0A_Ptr equ (Music_0A&$FFFF)|$8000
+Music_0B_Ptr equ (Music_0B&$FFFF)|$8000
+Music_0C_Ptr equ (Music_0C&$FFFF)|$8000
+Music_0D_Ptr equ (Music_0D&$FFFF)|$8000
+Music_0E_Ptr equ (Music_0E&$FFFF)|$8000
+Music_0F_Ptr equ (Music_0F&$FFFF)|$8000
+Music_10_Ptr equ (Music_10&$FFFF)|$8000
+Music_11_Ptr equ (Music_11&$FFFF)|$8000
+Music_12_Ptr equ (Music_12&$FFFF)|$8000
+Music_13_Ptr equ (Music_13&$FFFF)|$8000
+Music_14_Ptr equ (Music_14&$FFFF)|$8000
+Music_15_Ptr equ (Music_15&$FFFF)|$8000
+Music_16_Ptr equ (Music_16&$FFFF)|$8000
+Music_17_Ptr equ (Music_17&$FFFF)|$8000
+Music_18_Ptr equ (Music_18&$FFFF)|$8000
+Music_19_Ptr equ (Music_19&$FFFF)|$8000
+Music_1A_Ptr equ (Music_1A&$FFFF)|$8000
+Music_1B_Ptr equ (Music_1B&$FFFF)|$8000
+Music_1C_Ptr equ (Music_1C&$FFFF)|$8000
+Music_1D_Ptr equ (Music_1D&$FFFF)|$8000
+Music_1E_Ptr equ (Music_1E&$FFFF)|$8000
+Music_1F_Ptr equ (Music_1F&$FFFF)|$8000
+
 
 
 

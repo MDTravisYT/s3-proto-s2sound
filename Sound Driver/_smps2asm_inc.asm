@@ -54,7 +54,9 @@ nMaxPSG2			EQU nB6
 		enum fTone_0D=fTone_0C+1
 ; ---------------------------------------------------------------------------
 ; DAC Equates
-			enum dCrackerKick=$81,dCrackerSnare,dCrackerTimpaniHi,dCrackerTimpaniMid,dCrackerTimpaniLow,dCrackerLessgo,dCrackerHaa
+			enum		dKick=$81,dSnare,dClap,dScratch,dTimpani,dHiTom,dVLowClap,dHiTimpani,dMidTimpani
+			nextenum	dLowTimpani,dVLowTimpani,dMidTom,dLowTom,dFloorTom,dHiClap
+			nextenum	dMidClap,dLowClap
 ; ---------------------------------------------------------------------------
 ; Channel IDs for SFX
 cPSG1				EQU $80
