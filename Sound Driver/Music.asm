@@ -21,18 +21,6 @@ use_sk_samples			= 1
 	align	$B0000
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ; Z80 Bank $16
     ;            align   $8000
 
@@ -54,26 +42,26 @@ Music_08:	include		"music-improved/88 - CNZ 2P.asm"
 Music_09:	include		"music-improved/89 - CNZ.asm"
 Music_0A:	include		"music-improved/8A - DEZ.asm"
 Music_0B:	include		"music-improved/8B - MCZ.asm"
-; Z80 Bank $19  
-                align   $8000
 Music_0C:	include		"music-improved/8C - EHZ 2P.asm"
 Music_0D:	include		"music-improved/8D - SCZ.asm"
+; Z80 Bank $19  
+                align   $8000
+
 Music_0E:	include		"music-improved/8E - CPZ.asm"
 Music_0F:	include		"music-improved/8F - WFZ.asm"
 Music_10:	include		"music-improved/90 - HPZ.asm"
 Music_11:	include		"music-improved/91 - Options.asm"
-;-------------------------------------------------------------------------------                
-;-------------------------------------------------------------------------------                                
-; Z80 Bank $1A
-                align   $8000
 Music_12:	include		"music-improved/92 - Special Stage.asm"
 Music_13:	include		"music-improved/93 - Boss.asm"
 Music_14:	include		"music-improved/94 - Final Boss.asm"
 Music_15:	include		"music-improved/95 - Ending.asm"
 Music_16:	include		"music-improved/96 - Super Sonic.asm"
-Music_17:	include		"music-improved/97 - Invincible.asm"
-; Z80 Bank $1B
+;-------------------------------------------------------------------------------                
+;-------------------------------------------------------------------------------                                
+; Z80 Bank $1A
                 align   $8000
+
+Music_17:	include		"music-improved/97 - Invincible.asm"
 Music_18:	include		"music-improved/98 - Extra Life.asm"
 Music_19:	include		"music-improved/99 - Title Screen.asm"
 Music_1A:	include		"music-improved/9A - End of Act.asm"
@@ -82,12 +70,48 @@ Music_1C:	include		"music-improved/9C - Continue.asm"
 Music_1D:	include		"music-improved/9D - Got Emerald.asm"
 Music_1E:	include		"music-improved/9E - Credits.asm"
 Music_1F:	include		"music-improved/9F - Drowning.asm"      
+; Z80 Bank $1B
+                align   $8000
+
 ;-------------------------------------------------------------------------------
 ; Offset_0x0D86C0:
-		align	$10000
+		align	$20000
 ;-------------------------------------------------------------------------------                                
 Z80_Driver:                                                    ; Offset_0x0E0000
                 binclude  "sounds\z80_drv.bin"
+				
+Music_01_Ptr equ (Music_01&$FFFF)|$8000
+Music_02_Ptr equ (Music_02&$FFFF)|$8000
+Music_03_Ptr equ (Music_03&$FFFF)|$8000
+Music_04_Ptr equ (Music_04&$FFFF)|$8000
+Music_05_Ptr equ (Music_05&$FFFF)|$8000
+Music_06_Ptr equ (Music_06&$FFFF)|$8000
+Music_07_Ptr equ (Music_07&$FFFF)|$8000
+Music_08_Ptr equ (Music_08&$FFFF)|$8000
+Music_09_Ptr equ (Music_09&$FFFF)|$8000
+Music_0A_Ptr equ (Music_0A&$FFFF)|$8000
+Music_0B_Ptr equ (Music_0B&$FFFF)|$8000
+Music_0C_Ptr equ (Music_0C&$FFFF)|$8000
+Music_0D_Ptr equ (Music_0D&$FFFF)|$8000
+Music_0E_Ptr equ (Music_0E&$FFFF)|$8000
+Music_0F_Ptr equ (Music_0F&$FFFF)|$8000
+Music_10_Ptr equ (Music_10&$FFFF)|$8000
+Music_11_Ptr equ (Music_11&$FFFF)|$8000
+Music_12_Ptr equ (Music_12&$FFFF)|$8000
+Music_13_Ptr equ (Music_13&$FFFF)|$8000
+Music_14_Ptr equ (Music_14&$FFFF)|$8000
+Music_15_Ptr equ (Music_15&$FFFF)|$8000
+Music_16_Ptr equ (Music_16&$FFFF)|$8000
+Music_17_Ptr equ (Music_17&$FFFF)|$8000
+Music_18_Ptr equ (Music_18&$FFFF)|$8000
+Music_19_Ptr equ (Music_19&$FFFF)|$8000
+Music_1A_Ptr equ (Music_1A&$FFFF)|$8000
+Music_1B_Ptr equ (Music_1B&$FFFF)|$8000
+Music_1C_Ptr equ (Music_1C&$FFFF)|$8000
+Music_1D_Ptr equ (Music_1D&$FFFF)|$8000
+Music_1E_Ptr equ (Music_1E&$FFFF)|$8000
+Music_1F_Ptr equ (Music_1F&$FFFF)|$8000
+				
 ; Offset_0x0E16A0               
                 dc.w    (((Music_01_Ptr>>$08)|(Music_01_Ptr<<$08))&$FFFF) ;$8000
                 dc.w    (((Music_02_Ptr>>$08)|(Music_02_Ptr<<$08))&$FFFF) ;$A210
