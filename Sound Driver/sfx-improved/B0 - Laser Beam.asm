@@ -1,5 +1,5 @@
 Sound30_LaserBeam_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound30_LaserBeam_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

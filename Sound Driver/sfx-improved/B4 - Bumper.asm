@@ -1,5 +1,5 @@
 Sound34_Bumper_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound34_Bumper_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $03

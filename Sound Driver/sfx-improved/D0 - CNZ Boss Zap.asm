@@ -1,5 +1,5 @@
 Sound50_CNZBossZap_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound50_CNZBossZap_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

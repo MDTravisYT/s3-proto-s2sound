@@ -1,5 +1,5 @@
 Sound6B_LaserFloor_Header:
-	smpsHeaderStartSong 3, 1
+	smpsHeaderStartSong 2, 1
 	smpsHeaderVoice     Sound6B_LaserFloor_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

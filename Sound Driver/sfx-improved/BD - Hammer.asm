@@ -1,5 +1,5 @@
 Sound3D_Hammer_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound3D_Hammer_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $02

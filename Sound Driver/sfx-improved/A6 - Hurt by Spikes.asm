@@ -1,5 +1,5 @@
 Sound26_HurtBySpikes_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound26_HurtBySpikes_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

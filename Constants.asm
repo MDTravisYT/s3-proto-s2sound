@@ -286,7 +286,7 @@ Smash_Sfx                equ $00CB
 Switch_Blip_Sfx          equ $00CD
 Floor_Thump_Sfx          equ $0068
 Crash_Sfx                equ $006C
-Jump_Sfx                 equ $0070
+Jump_Sfx                 equ $00A0
 Level_Projectile_Sfx     equ $00A5
 Underwater_Sfx           equ $0079
 Boss_Hit_Sfx             equ $007C

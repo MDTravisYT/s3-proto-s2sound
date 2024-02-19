@@ -1,5 +1,5 @@
 Sound54_OOZLidPop_Header:
-	smpsHeaderStartSong 3, 1
+	smpsHeaderStartSong 2, 1
 	smpsHeaderVoice     Sound54_OOZLidPop_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $02

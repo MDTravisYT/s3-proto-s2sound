@@ -1,5 +1,5 @@
 Sound20_Jump_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoiceNull
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

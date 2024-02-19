@@ -1,5 +1,5 @@
 Sound6E_MechaSonicBuzz_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound6E_MechaSonicBuzz_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $02

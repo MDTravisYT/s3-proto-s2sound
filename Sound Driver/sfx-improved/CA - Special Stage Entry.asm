@@ -1,5 +1,5 @@
 Sound4A_SpecStageEntry_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound4A_SpecStageEntry_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

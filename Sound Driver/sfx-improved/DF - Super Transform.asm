@@ -1,5 +1,5 @@
 Sound5F_SuperTransform_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound5F_SuperTransform_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $03

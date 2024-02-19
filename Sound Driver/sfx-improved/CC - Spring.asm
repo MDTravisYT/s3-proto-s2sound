@@ -1,5 +1,5 @@
 Sound4C_Spring_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound4C_Spring_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

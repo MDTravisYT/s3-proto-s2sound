@@ -1,5 +1,5 @@
 Sound3F_ContinueJingle_Header:
-	smpsHeaderStartSong 3, 1
+	smpsHeaderStartSong 2, 1
 	smpsHeaderVoice     Sound3F_40_42_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $03

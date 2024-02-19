@@ -1,5 +1,5 @@
 Sound25_BlockPush_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound25_BlockPush_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

@@ -1,5 +1,5 @@
 Sound5D_ArrowStick_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound5D_ArrowStick_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

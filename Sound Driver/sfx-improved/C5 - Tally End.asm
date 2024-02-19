@@ -1,5 +1,5 @@
 Sound45_TallyEnd_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound45_TallyEnd_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $03

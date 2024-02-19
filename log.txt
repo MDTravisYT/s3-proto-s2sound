@@ -137,4 +137,4 @@ C:\USERS\MINEC\DOWNLOADS\NEW FOLDER (32)\DATA\OBJECTS\OBJ_0XBC.ASM(115) : Warnin
  moveq #Smash_Sfx,D0
 
 Assembly completed.
-0 error(s) from 113996 lines in 0.81 seconds
+0 error(s) from 113996 lines in 0.36 seconds

@@ -1,5 +1,5 @@
 Sound69_DrawbridgeDown_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound69_DrawbridgeDown_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $02

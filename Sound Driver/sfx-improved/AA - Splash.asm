@@ -1,5 +1,5 @@
 Sound2A_Splash_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound2A_Splash_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $02

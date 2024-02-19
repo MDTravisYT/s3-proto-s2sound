@@ -1,5 +1,5 @@
 Sound44_BossExplosion_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound44_BossExplosion_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

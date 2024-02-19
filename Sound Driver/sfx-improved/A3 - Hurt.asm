@@ -1,5 +1,5 @@
 Sound23_Hurt_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound23_Hurt_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

@@ -1,5 +1,5 @@
 Sound55_SlidingSpike_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound55_SlidingSpike_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

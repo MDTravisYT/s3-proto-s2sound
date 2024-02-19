@@ -1,5 +1,5 @@
 Sound67_DrawbridgeMove_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound67_DrawbridgeMove_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

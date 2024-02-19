@@ -1,5 +1,5 @@
 Sound2D_InhalingBubble_Header:
-	smpsHeaderStartSong 3, 1
+	smpsHeaderStartSong 2, 1
 	smpsHeaderVoice     Sound2D_InhalingBubble_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

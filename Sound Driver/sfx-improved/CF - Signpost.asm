@@ -1,5 +1,5 @@
 Sound4F_Signpost_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound4F_Signpost_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $02

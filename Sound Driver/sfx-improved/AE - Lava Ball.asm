@@ -1,5 +1,5 @@
 Sound2E_LavaBall_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound2E_33_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $02

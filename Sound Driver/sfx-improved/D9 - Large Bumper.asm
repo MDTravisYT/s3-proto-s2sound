@@ -1,5 +1,5 @@
 Sound59_LargeBumper_Header:
-	smpsHeaderStartSong 3, 1
+	smpsHeaderStartSong 2, 1
 	smpsHeaderVoice     Sound59_LargeBumper_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $03

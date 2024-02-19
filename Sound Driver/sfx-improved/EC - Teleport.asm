@@ -1,5 +1,5 @@
 Sound6C_Teleport_Header:
-	smpsHeaderStartSong 3, 1
+	smpsHeaderStartSong 2, 1
 	smpsHeaderVoice     Sound6C_Teleport_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $04

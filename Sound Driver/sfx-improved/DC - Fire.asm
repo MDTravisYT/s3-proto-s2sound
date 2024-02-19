@@ -1,5 +1,5 @@
 Sound5C_Fire_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound5C_Fire_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $02

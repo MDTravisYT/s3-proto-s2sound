@@ -1,5 +1,5 @@
 Sound56_CNZElevator_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound56_CNZElevator_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

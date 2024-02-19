@@ -1,5 +1,5 @@
 Sound47_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound47_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

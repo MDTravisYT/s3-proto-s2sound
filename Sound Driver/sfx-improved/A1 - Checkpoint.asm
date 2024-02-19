@@ -1,5 +1,5 @@
 Sound21_Checkpoint_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound21_Checkpoint_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

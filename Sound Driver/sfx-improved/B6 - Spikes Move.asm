@@ -1,5 +1,5 @@
 Sound36_SpikesMove_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoiceNull
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

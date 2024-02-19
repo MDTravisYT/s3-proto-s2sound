@@ -1,5 +1,5 @@
 Sound5B_PreArrowFiring_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound5B_PreArrowFiring_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

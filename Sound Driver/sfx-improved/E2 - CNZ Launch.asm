@@ -1,5 +1,5 @@
 Sound62_CNZLaunch_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound62_CNZLaunch_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01

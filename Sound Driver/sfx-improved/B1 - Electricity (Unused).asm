@@ -1,5 +1,5 @@
 Sound31_Zap_Header:
-	smpsHeaderStartSong 3
+	smpsHeaderStartSong 2
 	smpsHeaderVoice     Sound31_Zap_Voices
 	smpsHeaderTempoSFX  $01
 	smpsHeaderChanSFX   $01
