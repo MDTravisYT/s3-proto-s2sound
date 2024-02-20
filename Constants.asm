@@ -236,7 +236,7 @@ The_Doomsday_Snd         equ $001C
 Special_Stage_Snd        equ $0012
 BS_Slot_Machine_Snd      equ $001D
 BS_Gumball_Machine_Snd   equ $001E
-Knuckles_Theme_Snd       equ $001F
+Knuckles_Theme_Snd       equ $0013
 Azure_Lake_Snd           equ $0020
 Balloon_Park_Snd         equ $0021
 Desert_Palace_Snd        equ $0022

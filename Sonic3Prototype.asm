@@ -113,7 +113,7 @@ IOSupport:
 ROM_Start:                
                 dc.l    $00000000                
 ROM_End:                
-                dc.l    $001FFFFF
+                dc.l    $003FFFFF
 RAMStart:                
                 dc.l    $00FF0000
 RAMEnd:                
@@ -3781,7 +3781,7 @@ Offset_0x0031C6:
 ; Logo da SEGA
 ; <<<-
 ;===============================================================================
-
+				even
 ;===============================================================================
 ; Tela título
 ; ->>>
@@ -30414,8 +30414,7 @@ Offset_0x04CD0E:
 ; Left over - Parte de ponteiros de objetos de uma compilação anterior
 ; <<<-
 ;-------------------------------------------------------------------------------
-Offset_0x04CD18:  
-                incbin  'data\unknown\dummy.dat'
+
 ;===============================================================================
 ; Lista de objetos das fases       
 ; <<<-
@@ -30560,22 +30559,14 @@ Art_Oxygen_Numbers:                                            ; Offset_0x0A8640
 Art_Menu_Sonic_Miles:                                          ; Offset_0x0A8DC0
                 incbin  'data\menus\soncmils.dat'
                 
-Offset_0x0A92C0:
-                incbin  'data\unknown\dummy2.dat'
+
 ;-------------------------------------------------------------------------------                
-Asm_Code_1:                                                    ; Offset_0x0AFF0F                
-                dc.b    'WhichMessage', $0D, $0A
-                dc.b    '                Bra     @DoneInput', $0D, $0A, $0D, $0A
-                dc.b    '@InComingHail:', $0D, $0A
-                dc.b    '                Move.w  #3,WhichMessage', $0D, $0A
-                dc.b    '                Bra     @DoneInput', $0D, $0A, $0D, $0A
-                dc.b    '@ImpulseDamaged:', $0D, $0A
-                dc.b    '                Move.w  #4,WhichMessage', $0D, $0A
-                dc.b    '                Bra     @DoneInput', $0D
+
 ;-------------------------------------------------------------------------------
 				
 		;		include	'_smps2asm_inc.asm'
         ;        include 's3.proto.sounddriver.asm'     
+				align	$B0000
 				incbin	'Sound Driver\Music.bin'
 
 ;===============================================================================
