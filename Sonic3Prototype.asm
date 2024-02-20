@@ -113,7 +113,7 @@ IOSupport:
 ROM_Start:                
                 dc.l    $00000000                
 ROM_End:                
-                dc.l    $003FFFFF
+                dc.l    $001FFFFF
 RAMStart:                
                 dc.l    $00FF0000
 RAMEnd:                
@@ -41505,6 +41505,7 @@ Level_Layout:                                                  ; Offset_0x1DCF00
 ;-------------------------------------------------------------------------------
 AIz_Map_Act1:                                                  ; Offset_0x1DCFC0
                 incbin  'data\aiz\aiz_map1.dat'
+				even
 AIz_Map_Act2:                                                  ; Offset_0x1DD80C
                 incbin  'data\aiz\aiz_map2.dat'
 Hz_Map_Act1:                                                   ; Offset_0x1DE572
@@ -42834,10 +42835,12 @@ LBz_Automatic_Tunnel_From_To_Data:                             ; Offset_0x1F7258
 ;-------------------------------------------------------------------------------
 AIz_Obj_Act1:                                                  ; Offset_0x1F72DE
                 incbin  'data\aiz\obj_act1.dat'     
+				even
 AIz_Obj_Act2:                                                  ; Offset_0x1F75C6    
                 incbin  'data\aiz\obj_act2.dat'
 AIz_Rng_Act1:                                                  ; Offset_0x1F7A4C
                 incbin  'data\aiz\rng_act1.dat'
+				even
 AIz_Rng_Act2:                                                  ; Offset_0x1F7BE4    
                 incbin  'data\aiz\rng_act2.dat'
 ;-------------------------------------------------------------------------------                
